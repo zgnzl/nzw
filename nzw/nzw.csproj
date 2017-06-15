@@ -154,6 +154,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ztxhkj\中泰祥和安全云桌面.jpg" />
+    <Content Include="Images\ztxhkj\云桌面.jpg" />
+    <Content Include="Images\ztxhkj\云桌面虚拟化网络架构.jpg" />
+    <Content Include="Images\ztxhkj\云计算架构下的数字化校园.jpg" />
+    <Content Include="Images\ztxhkj\机房.jpg" />
+    <Content Include="Images\ztxhkj\桌面云.jpg" />
+    <Content Include="Images\ztxhkj\桌面云数据.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
