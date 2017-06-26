@@ -154,11 +154,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ztxhkj\oseasy.png" />
+    <Content Include="Images\ztxhkj\product\646.JPG" />
+    <Content Include="Images\ztxhkj\product\M74vh.JPG" />
+    <Content Include="Images\ztxhkj\product\MAX.JPG" />
+    <Content Include="Images\ztxhkj\product\yingjian-yi-arm.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-yi-x86.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-zhong-x86.gif" />
     <Content Include="Images\ztxhkj\中泰祥和安全云桌面.jpg" />
     <Content Include="Images\ztxhkj\云桌面.jpg" />
     <Content Include="Images\ztxhkj\云桌面虚拟化网络架构.jpg" />
     <Content Include="Images\ztxhkj\云计算架构下的数字化校园.jpg" />
+    <Content Include="Images\ztxhkj\服务器.jpg" />
     <Content Include="Images\ztxhkj\机房.jpg" />
+    <Content Include="Images\ztxhkj\校园云桌面.jpg" />
     <Content Include="Images\ztxhkj\桌面云.jpg" />
     <Content Include="Images\ztxhkj\桌面云数据.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -177,6 +186,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\zg69\wenziyun.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -191,6 +201,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\ZhaoPin.cshtml" />
+    <Content Include="Views\Home\wenziyun.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
