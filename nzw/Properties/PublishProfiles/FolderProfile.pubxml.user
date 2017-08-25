@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>C:\Users\nzlwa\Desktop\iis\nzw</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/20/2017 20:52:22</publishTime>
+    </File>
+    <File Include="bin/nzw.dll">
+      <publishTime>07/15/2017 19:32:32</publishTime>
+    </File>
+    <File Include="bin/nzw.pdb">
+      <publishTime>07/15/2017 19:32:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/20/2017 20:52:23</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/20/2017 20:52:15</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/oseasy.png">
+      <publishTime>06/26/2017 20:21:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/646.JPG">
+      <publishTime>06/24/2017 21:08:18</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/M74vh.JPG">
+      <publishTime>06/24/2017 21:08:18</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/MAX.JPG">
+      <publishTime>06/24/2017 21:08:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-yi-arm.gif">
+      <publishTime>06/26/2017 20:51:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-yi-x86.gif">
+      <publishTime>06/26/2017 20:51:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-zhong-x86.gif">
+      <publishTime>06/26/2017 20:51:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/中泰祥和安全云桌面.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云桌面.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云桌面虚拟化网络架构.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云计算架构下的数字化校园.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/服务器.jpg">
+      <publishTime>06/24/2017 19:11:22</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/机房.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/校园云桌面.jpg">
+      <publishTime>06/26/2017 20:14:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/桌面云.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/桌面云数据.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/zg69/wenziyun.js">
+      <publishTime>06/24/2017 20:02:37</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>06/24/2017 17:56:36</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>07/15/2017 19:00:58</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/27/2017 21:07:29</publishTime>
+    </File>
+    <File Include="Views/Home/Product.cshtml">
+      <publishTime>06/26/2017 21:11:55</publishTime>
+    </File>
+    <File Include="Views/Home/wenziyun.cshtml">
+      <publishTime>06/24/2017 20:55:27</publishTime>
+    </File>
+    <File Include="Views/Home/ZhaoPin.cshtml">
+      <publishTime>07/15/2017 19:04:22</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>07/15/2017 18:29:19</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/15/2017 19:32:35</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

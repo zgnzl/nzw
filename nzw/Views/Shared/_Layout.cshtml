@@ -40,16 +40,27 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+       
+    </div>
+    <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:white;padding-left:30%;padding-top:15px">
         <footer>
-            <p>
-                &copy; @DateTime.Now.Year - @ViewBag.CompanyName    版权所有
-                <script type="text/javascript">
+                <p>
+                    @Html.Raw("@")北京市通州区台湖北里29号楼3层328室
+    @Html.ActionLink("主页", "Index", "Home" ,null,new {@style="margin-left: 50px"})
+    @Html.ActionLink("产品", "Product", "Home", null, new { @style = "margin-left: 20px" })
+    @Html.ActionLink("关于", "About", "Home", null, new { @style = "margin-left: 20px" })
+    @Html.ActionLink("联系", "Contact", "Home",null,new {@style="margin-left: 20px"})
+    @Html.ActionLink("招聘", "ZhaoPin", "Home", null, new { @style = "margin-left: 20px" })
+
+                </p>
+                <p>
+                    &copy; @DateTime.Now.Year - @ViewBag.CompanyName    版权所有
+                    @*<script type="text/javascript">
                     document.write(unescape(" %3Cscript type='text/javascript' src='http://zg69.cn/statictics/index/testid?title=" + escape(document.title) + "&sourceurl=" + encodeURI(document.location.href) + "'%3E%3C/script%3E"));
-                </script>
-            </p>
+                </script>*@
+                </p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
