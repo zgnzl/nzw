@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -154,6 +155,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\ztxhkj\bg.jpg" />
+    <Content Include="Images\ztxhkj\bg1.jpg" />
+    <Content Include="Images\ztxhkj\LX.jpg" />
     <Content Include="Images\ztxhkj\oseasy.png" />
     <Content Include="Images\ztxhkj\product\646.JPG" />
     <Content Include="Images\ztxhkj\product\M74vh.JPG" />
@@ -161,6 +165,7 @@
     <Content Include="Images\ztxhkj\product\yingjian-yi-arm.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-yi-x86.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-zhong-x86.gif" />
+    <Content Include="Images\ztxhkj\ZP.jpg" />
     <Content Include="Images\ztxhkj\中泰祥和安全云桌面.jpg" />
     <Content Include="Images\ztxhkj\云桌面.jpg" />
     <Content Include="Images\ztxhkj\云桌面虚拟化网络架构.jpg" />

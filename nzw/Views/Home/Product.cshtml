@@ -3,147 +3,205 @@
     ViewBag.Message = "电子元器件列表：";
 }
 <style>
-    ul {
-        list-style:none;
-       
+    #list ul {
+        list-style: none;
+        width: 228px;
     }
-    ul li{
-        float:left;
-        padding:5px;
-        text-align:left;
+
+    body {
+        background-image: url(../Images/ztxhkj/bg.jpg);
     }
-        ul li>div {
-            border: 1px dotted #d0cdcd;
+        #list ul li {
+            display: block;
+            padding: 5px;
+            text-align: left;
         }
-   img {
-       max-height:216px;
+    #list ul li span{
+       color:white;
+    }
+            #list ul li > div {
+                border: 1px dotted #d0cdcd;
+            }
+     img {
+        max-height: 216px;
     }
 </style>
 <h2>&nbsp;</h2>
-<h3>@ViewBag.Message</h3>
-<div id="product">
-    <ul>
-       <li>
-           <div  >
-               <img src="~/Images/ztxhkj/product/646.jpg" />
-               <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-           </div>
-       </li>
+<div id="list" style="float:left" >
+    <ul class="" style=" list-style-type:none;width:100%;font-size:14px;">
         <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/m74vh.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
+            <span style="font-size:16px">私有云服务</span>
+            <ul class="" >
+                <li><a href="/portal/article/index/id/8.html">OS-Easy Cloud</a></li>
+                <li><a href="/portal/article/index/id/9.html">OS-Easy vServer</a></li>
+                <li><a href="/portal/article/index/id/10.html">OS-Easy vBackup</a></li>
+            </ul>
+        </li>
+        <li >
+            <span style="font-size:16px">创新创业云服务</span>
+            <ul class="" >
+                <li><a href="/portal/article/index/id/332.html">开创啦</a></li>
+            </ul>
+        </li>
+        <li >
+            <span style="font-size:16px">桌面云服务</span>
+            <ul class="" style="">
+                <li><a href="/portal/article/index/id/1.html">OS-Easy E-VDI</a></li>
+                <li><a href="/portal/article/index/id/6.html">OS-Easy Cloud Class</a></li>
+                <li><a href="/portal/article/index/id/7.html">OS-Easy vPC</a></li>
+                <li><a href="/edu-cloud/yingjian.html">噢易云服务器</a></li>
+                <li><a href="/edu-cloud/yingjian.html">噢易云终端(X86/ARM)</a></li>
+                <li><a href="/edu-cloud/yingjian.html">噢易云一体机(X86/ARM)</a></li>
+            </ul>
         </li>
         <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/max.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
+            <span style="font-size:16px">大数据服务</span>
+            <ul class="" style="">
+                <li><a href="/portal/article/index/id/334.html">OS-Easy BI</a></li>
+                <li><a href="/portal/article/index/id/340.html">OS-Easy ETL</a></li>
+            </ul>
         </li>
         <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/646.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/m74vh.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/646.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/max.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/m74vh.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/max.jpg" />
-                <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
-            </div>
-        </li>
-
-    </ul>
-</div>
-<div class="clearfix"> </div>
-<hr />
-<h3>服务器产品列表：</h3>
-<div>
-    <ul>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/yingjian-yi-arm.gif" />
-                <div>
-                    噢易一体机OX21U-XXX<br />
-
-                    CPU:Intel(R) Celeron 双核1.8GHZ<br />
-
-                    内存:2G/4G DDR3L<br />
-
-                    硬盘:8G/64G SSD<br />
-
-                    显示器:19.5寸/21.5寸<br />
-
-                    I/O:USB2.0 * 6 、VGA接口*1 HDMI接口*1<br />MIC*1 Audio out*1<br />
-                </div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/yingjian-yi-x86.gif" />
-                <div>
-                    噢易一体机OA21R-XXX<br />
-
-                    CPU: ARM Cortex A9 1.6GHz, 4 Cores<br />
-
-                    内存:DDR3 1GB<br />
-
-                    硬盘:4GB/8GB<br />
-
-                    显示器:19.5/21.5寸<br />
-
-                    I/O:USB2.0 * 4、VGA接口*1<br /> MIC*1、Audio out<br />
-                </div>
-            </div>
-        </li>
-        <li>
-            <div  >
-                <img src="~/Images/ztxhkj/product/yingjian-zhong-x86.gif" />
-                <div>
-                    噢易云终端OX47-XXX<br />
-
-                    CPU:Intel(R) Celeron 双核1.8GHZ<br />
-
-                    内存:2G/4G DDR3L<br />
-
-                    硬盘:16G/64G SSD<br />
-                    防盗:提供防盗锁孔<br />
-
-                    VESA:支持通过VESA接口挂在显示器上<br />
-
-                    支持协议:RAP\Microsoft RDP<br />Citrix ICA、VMwarePCoIP<br />
-
-                    I/O:USB2.0 * 2 USB3.0*2 、VGA接口*1<br />HDMI接口*1 MIC*1、Audio out*1<br />
-
-
-                </div>
-            </div>
+            <span style="font-size:16px">运维管理</span>
+            <ul class="" style="">
+                <li><a href="/portal/article/index/id/5.html">噢易Mac机房管理系统</a></li>
+                <li><a href="/portal/article/index/id/11.html">噢易OSS系统</a></li>
+                <li><a href="/portal/article/index/id/12.html">噢易BOSS系统</a></li>
+                <li><a href="/portal/article/index/id/228.html">噢易桌面云运维管理系统</a></li>
+                <li><a href="/portal/article/index/id/14.html">噢易多媒体网络教室软件</a></li>
+                <li><a href="/portal/article/index/id/13.html">噢易班班通管理分析系统</a></li>
+            </ul>
         </li>
     </ul>
 </div>
-<div class="clearfix"> </div>
+<h2>&nbsp;</h2>
+<div style="display:none">
+    <h3>@ViewBag.Message</h3>
+    <div id="product">
+        <ul>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/646.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/m74vh.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/max.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/646.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/m74vh.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/646.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/max.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/m74vh.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/max.jpg" />
+                    <div>制造商：<i title="北京中泰祥和科技有限公司">bj-ztxhkj</i></div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+    <hr />
+    <h3>服务器产品列表：</h3>
+    <div>
+        <ul>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/yingjian-yi-arm.gif" />
+                    <div>
+                        噢易一体机OX21U-XXX<br />
+
+                        CPU:Intel(R) Celeron 双核1.8GHZ<br />
+
+                        内存:2G/4G DDR3L<br />
+
+                        硬盘:8G/64G SSD<br />
+
+                        显示器:19.5寸/21.5寸<br />
+
+                        I/O:USB2.0 * 6 、VGA接口*1 HDMI接口*1<br />MIC*1 Audio out*1<br />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/yingjian-yi-x86.gif" />
+                    <div>
+                        噢易一体机OA21R-XXX<br />
+
+                        CPU: ARM Cortex A9 1.6GHz, 4 Cores<br />
+
+                        内存:DDR3 1GB<br />
+
+                        硬盘:4GB/8GB<br />
+
+                        显示器:19.5/21.5寸<br />
+
+                        I/O:USB2.0 * 4、VGA接口*1<br /> MIC*1、Audio out<br />
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="~/Images/ztxhkj/product/yingjian-zhong-x86.gif" />
+                    <div>
+                        噢易云终端OX47-XXX<br />
+
+                        CPU:Intel(R) Celeron 双核1.8GHZ<br />
+
+                        内存:2G/4G DDR3L<br />
+
+                        硬盘:16G/64G SSD<br />
+                        防盗:提供防盗锁孔<br />
+
+                        VESA:支持通过VESA接口挂在显示器上<br />
+
+                        支持协议:RAP\Microsoft RDP<br />Citrix ICA、VMwarePCoIP<br />
+
+                        I/O:USB2.0 * 2 USB3.0*2 、VGA接口*1<br />HDMI接口*1 MIC*1、Audio out*1<br />
+
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<div class="clearfix"></div>
