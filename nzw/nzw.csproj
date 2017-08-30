@@ -162,6 +162,12 @@
     <Content Include="Images\ztxhkj\product\646.JPG" />
     <Content Include="Images\ztxhkj\product\M74vh.JPG" />
     <Content Include="Images\ztxhkj\product\MAX.JPG" />
+    <Content Include="Images\ztxhkj\product\product-mk01.jpg" />
+    <Content Include="Images\ztxhkj\product\product-mk02.jpg" />
+    <Content Include="Images\ztxhkj\product\product-mk03.jpg" />
+    <Content Include="Images\ztxhkj\product\product-mk04.jpg" />
+    <Content Include="Images\ztxhkj\product\product-mk05.jpg" />
+    <Content Include="Images\ztxhkj\product\product_classr.jpg" />
     <Content Include="Images\ztxhkj\product\yingjian-yi-arm.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-yi-x86.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-zhong-x86.gif" />
