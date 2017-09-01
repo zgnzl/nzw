@@ -26,9 +26,17 @@ namespace nzw.Controllers
         {
             return View();
         }
-        public ActionResult Product()
+        public ActionResult Product(string id)
         {
-            return View();
+            if (string.IsNullOrEmpty(id))
+            {
+                return View();
+            }
+            else
+            {
+                return View(id);
+
+            }
         }
     }
 }
