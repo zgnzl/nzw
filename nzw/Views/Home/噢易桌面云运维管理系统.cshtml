@@ -3,6 +3,17 @@
 @{
     ViewBag.Title = "噢易桌面云运维管理系统";
 }
+<script>
+    $(function () {
+        $(".list-paddingleft-2>li").mouseover(function () {
+
+            $(".list-paddingleft-2>li").removeClass("active");
+            $(this).addClass("active");
+            $("#oe-banner-item1>div").hide();
+            $("#oe-banner-item1>div").eq($(this).index()).show();
+        });
+    });
+</script>
 <div class="oe-product-detail">
     <div class="container">
         <div class="row"> <div class="col-md-12"> <ol class="breadcrumb"> <li><a href="@Url.Content("~/home/index")"><i class="fa fa-home"></i> 首页</a></li> <li><a href="@Url.Content("~/home/product")">产品</a></li> <li class="active">噢易桌面云运维系统</li> </ol> </div> </div> <div class="row">
@@ -36,7 +47,7 @@
                                         云实验室
                                     </p>
                                 </li>
-                            </ul> <div class="swiper-wrapper"> <div class="swiper-slide oe-banner-item swiper-slide-active" style="background-image: url(&quot;~/Images/ztxhkj/product/57b11d99ad054.jpg&quot;); width: 990px;"></div> <div class="swiper-slide oe-banner-item swiper-slide-next" style="background-image: url(&quot;~/Images/ztxhkj/product/57b11d99ab5a0.jpg&quot;); width: 990px;"></div> <div class="swiper-slide oe-banner-item" style="background-image: url(&quot;~/Images/ztxhkj/product/57b11d99ba9c0.jpg&quot;); width: 990px;"></div> </div>
+                            </ul> <div id="oe-banner-item1" class="swiper-wrapper"> <div class="swiper-slide oe-banner-item swiper-slide-active" style="background-image: url(&quot;../../Images/ztxhkj/product/57b11d99ad054.jpg&quot;); width: 990px;"></div> <div class="swiper-slide oe-banner-item swiper-slide-next" style="background-image: url(&quot;../../Images/ztxhkj/product/57b11d99ab5a0.jpg&quot;); width: 990px;"></div> <div class="swiper-slide oe-banner-item" style="background-image: url(&quot;../../Images/ztxhkj/product/57b11d99ba9c0.jpg&quot;); width: 990px;"></div> </div>
                         </div>
                     </div>
                 </div> <div class="clearfix"></div> <div class="col-md-2"> </div>

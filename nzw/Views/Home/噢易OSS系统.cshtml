@@ -4,6 +4,17 @@
 @{
     ViewBag.Title = "噢易OSS系统";
 }
+<script>
+    $(function () {
+        $(".list-paddingleft-2>li").mouseover(function () {
+
+            $(".list-paddingleft-2>li").removeClass("active");
+            $(this).addClass("active");
+            $("#oe-banner-item1>div").hide();
+            $("#oe-banner-item1>div").eq($(this).index()).show();;
+        });
+    });
+</script>
 <div class="oe-product-detail">
     <div class="container">
         <div class="row"> <div class="col-md-12"> <ol class="breadcrumb"> <li><a href="@Url.Content("~/home/index")"><i class="fa fa-home"></i> 首页</a></li> <li><a href="@Url.Content("~/home/product")">产品</a></li> <li class="active">噢易机房OSS系统</li> </ol> </div> </div> <div class="row">
@@ -13,7 +24,21 @@
                         <h1>噢易机房OSS系统</h1> <hr>
                         噢易机房OSS系统是一套围绕计算机实验教学而设计的标准化支撑系统。它能让机房管理摆脱日常琐碎而重复的工作，降低机房管理的维护成本，提高了机房运行的稳定性，让机房的管理效率得到了有效的提升。将机房打造成标准化示范型计算机实验室。
                     </div> <div class="oe-photo-frame01 hidden-xs"> <div class="oe-banner-item" style="background-image: url('../../Images/ztxhkj/product/579b3d7201382.jpg')"></div> </div>
-                </div> <div class="oe-content"> <div class="col-md-12"> <h2 data-anchor-id="8g8l" id="应用场景" style="white-space: normal;">应用场景</h2><div class="oe-content-swiper swiper-container-horizontal"><ul class="oe-swiper-page-btn list-paddingleft-2"><li><p>上课管理</p></li><li><p>系统和软件维护</p></li><li><p>专业课支持</p></li><li><p>计算机等级考试支持</p></li><li><p>新机房部署</p></li></ul><div class="swiper-wrapper"><div class="swiper-slide oe-banner-item swiper-slide-active" style="background-image: url(&quot;~/Images/ztxhkj/product/57bbb3f188af2.jpg&quot;); width: 990px;"></div><div class="swiper-slide oe-banner-item swiper-slide-next" style="background-image: url(&quot;~/Images/ztxhkj/product/57bbb3f18a1d6.jpg&quot;); width: 990px;"></div><div class="swiper-slide oe-banner-item" style="background-image: url(&quot;~/Images/ztxhkj/product/57bbb3f340389.jpg&quot;); width: 990px;"></div><div class="swiper-slide oe-banner-item" style="background-image: url(&quot;~/Images/ztxhkj/product/57bbb3f1a0c3f.jpg&quot;); width: 990px;"></div><div class="swiper-slide oe-banner-item" style="background-image: url(&quot;~/Images/ztxhkj/product/57bbb3f1edc71.jpg&quot;); width: 990px;"></div></div></div><h2 data-anchor-id="bg31" id="部分典型用户" style="white-space: normal;">部分典型用户</h2><p><img src="~/Images/ztxhkj/product/57a4363081356.jpg" style="" title="噢易OSS-yonghu01.jpg"></p><p style="margin-top:35px;"><img src="~/Images/ztxhkj/product/57a5513b4461d.jpg" title="噢易OSS-yonghu02.jpg" alt="噢易OSS-yonghu02.jpg"></p><p><br></p> </div> </div> <div class="clearfix"></div> <div class="col-md-2"> </div>
+                </div> <div class="oe-content"> <div class="col-md-12"> <h2 data-anchor-id="8g8l" id="应用场景" style="white-space: normal;">应用场景</h2><div class="oe-content-swiper swiper-container-horizontal">
+                <ul class="oe-swiper-page-btn list-paddingleft-2">
+                <li class="active"><p>上课管理</p></li>
+                <li><p>系统和软件维护</p></li>
+                <li><p>专业课支持</p></li>
+                <li><p>计算机等级考试支持</p></li>
+                <li><p>新机房部署</p>
+                    </li></ul>
+                <div id="oe-banner-item1" class="swiper-wrapper">
+                <div class="swiper-slide oe-banner-item swiper-slide-active" style="background-image: url(&quot;../../Images/ztxhkj/product/57bbb3f188af2.jpg&quot;); width: 990px;"></div>
+                <div class="swiper-slide oe-banner-item swiper-slide-next" style="display:none;background-image: url(&quot;../../Images/ztxhkj/product/57bbb3f18a1d6.jpg&quot;); width: 990px;"></div>
+                <div class="swiper-slide oe-banner-item" style="display:none;background-image: url(&quot;../../Images/ztxhkj/product/57bbb3f340389.jpg&quot;); width: 990px;"></div>
+                <div class="swiper-slide oe-banner-item" style="display:none;background-image: url(&quot;../../Images/ztxhkj/product/57bbb3f1a0c3f.jpg&quot;); width: 990px;"></div>
+                <div class="swiper-slide oe-banner-item" style="display:none;background-image: url(&quot;../../Images/ztxhkj/product/57bbb3f1edc71.jpg&quot;); width: 990px;"></div>
+                    </div></div><h2 data-anchor-id="bg31" id="部分典型用户" style="white-space: normal;">部分典型用户</h2><p><img src="~/Images/ztxhkj/product/57a4363081356.jpg" style="" title="噢易OSS-yonghu01.jpg"></p><p style="margin-top:35px;"><img src="~/Images/ztxhkj/product/57a5513b4461d.jpg" title="噢易OSS-yonghu02.jpg" alt="噢易OSS-yonghu02.jpg"></p><p><br></p> </div> </div> <div class="clearfix"></div> <div class="col-md-2"> </div>
             </div>
         </div>
     </div>

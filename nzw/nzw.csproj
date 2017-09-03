@@ -151,7 +151,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\nav.css" />
     <Content Include="Content\product.css" />
+    <Content Include="Content\swiper.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -173,7 +175,15 @@
     <Content Include="Images\ztxhkj\product\579b3d7201382.jpg" />
     <Content Include="Images\ztxhkj\product\579b3d92af197.jpg" />
     <Content Include="Images\ztxhkj\product\579b3f1c8ff17.jpg" />
+    <Content Include="Images\ztxhkj\product\57a18d0c60761.jpg" />
+    <Content Include="Images\ztxhkj\product\57a19854bd58a.jpg" />
+    <Content Include="Images\ztxhkj\product\57a198a720731.jpg" />
+    <Content Include="Images\ztxhkj\product\57a198ee29055.jpg" />
     <Content Include="Images\ztxhkj\product\57a2941f75d3a.jpg" />
+    <Content Include="Images\ztxhkj\product\57a294720350d.jpg" />
+    <Content Include="Images\ztxhkj\product\57a2947b70286.jpg" />
+    <Content Include="Images\ztxhkj\product\57a294830b240.jpg" />
+    <Content Include="Images\ztxhkj\product\57a2948a82ca8.jpg" />
     <Content Include="Images\ztxhkj\product\57a2a66f5b1b6.jpg" />
     <Content Include="Images\ztxhkj\product\57a2e3b0c2aef.jpg" />
     <Content Include="Images\ztxhkj\product\57a2e3d13af6a.jpg" />
@@ -226,6 +236,24 @@
     <Content Include="Images\ztxhkj\product\57ac11678a15c.jpg" />
     <Content Include="Images\ztxhkj\product\57ac1183bb6b6.jpg" />
     <Content Include="Images\ztxhkj\product\57ac119aa95b6.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2aeb51b07.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2b035a4d1.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2b3144f1c.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2b4882bc7.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2b5dad032.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2b94ebd52.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2baf66c87.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2bc67ad94.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2c24d2bef.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2c36aac4f.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2caf2f7b5.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2cea4540f.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2d04205b6.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2d18ecb0c.jpg" />
+    <Content Include="Images\ztxhkj\product\57ac2d4b8f445.jpg" />
+    <Content Include="Images\ztxhkj\product\57b11d99ab5a0.jpg" />
+    <Content Include="Images\ztxhkj\product\57b11d99ad054.jpg" />
+    <Content Include="Images\ztxhkj\product\57b11d99ba9c0.jpg" />
     <Content Include="Images\ztxhkj\product\57b812913089c.png" />
     <Content Include="Images\ztxhkj\product\57b8178987756.jpg" />
     <Content Include="Images\ztxhkj\product\57b8179ca6dee.jpg" />
@@ -234,6 +262,14 @@
     <Content Include="Images\ztxhkj\product\57b817cae2e8b.jpg" />
     <Content Include="Images\ztxhkj\product\57b817dc59fb5.jpg" />
     <Content Include="Images\ztxhkj\product\57ba604ad9508.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb3f188af2.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb3f18a1d6.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb3f1a0c3f.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb3f1edc71.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb3f340389.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb61375d9e.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb61377c22.jpg" />
+    <Content Include="Images\ztxhkj\product\57bbb6137a619.jpg" />
     <Content Include="Images\ztxhkj\product\58607877708aa.jpg" />
     <Content Include="Images\ztxhkj\product\5860b926b6452.jpg" />
     <Content Include="Images\ztxhkj\product\5881a2ca7037e.png" />
@@ -264,7 +300,11 @@
     <Content Include="Images\ztxhkj\product\593a073bcbbdd.png" />
     <Content Include="Images\ztxhkj\product\593a1650c0533.jpg" />
     <Content Include="Images\ztxhkj\product\593a17a147480.png" />
+    <Content Include="Images\ztxhkj\product\5975da8482071.jpg" />
+    <Content Include="Images\ztxhkj\product\5975dabbaffa0.jpg" />
+    <Content Include="Images\ztxhkj\product\5975dad44cdf1.jpg" />
     <Content Include="Images\ztxhkj\product\646.JPG" />
+    <Content Include="Images\ztxhkj\product\jy-ptn-yjpzbanner.jpg" />
     <Content Include="Images\ztxhkj\product\M74vh.JPG" />
     <Content Include="Images\ztxhkj\product\MAX.JPG" />
     <Content Include="Images\ztxhkj\product\product-mk01.jpg" />
@@ -273,9 +313,14 @@
     <Content Include="Images\ztxhkj\product\product-mk04.jpg" />
     <Content Include="Images\ztxhkj\product\product-mk05.jpg" />
     <Content Include="Images\ztxhkj\product\product_classr.jpg" />
+    <Content Include="Images\ztxhkj\product\yingjian-xinghao01.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-xinghao02.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-xinghao03.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-yi-arm.gif" />
     <Content Include="Images\ztxhkj\product\yingjian-yi-x86.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-zhong-arm.jpg" />
     <Content Include="Images\ztxhkj\product\yingjian-zhong-x86.gif" />
+    <Content Include="Images\ztxhkj\product\yingjian-zhong-x8602.gif" />
     <Content Include="Images\ztxhkj\ZP.jpg" />
     <Content Include="Images\ztxhkj\中泰祥和安全云桌面.jpg" />
     <Content Include="Images\ztxhkj\云桌面.jpg" />
@@ -303,6 +348,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\zg69\main.js" />
     <Content Include="Scripts\zg69\wenziyun.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -339,6 +385,7 @@
     <Content Include="Views\Home\噢易桌面云运维管理系统.cshtml" />
     <Content Include="Views\Home\噢易多媒体网络教室软件.cshtml" />
     <Content Include="Views\Home\噢易班班通管理分析系统.cshtml" />
+    <Content Include="Scripts\zg69\swiper.jquery.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
