@@ -386,6 +386,8 @@
     <Content Include="Views\Home\噢易多媒体网络教室软件.cshtml" />
     <Content Include="Views\Home\噢易班班通管理分析系统.cshtml" />
     <Content Include="Scripts\zg69\swiper.jquery.min.js" />
+    <Content Include="Views\Home\硬件配置.cshtml" />
+    <Content Include="Views\Shared\_CloudServiceLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

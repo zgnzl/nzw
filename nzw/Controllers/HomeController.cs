@@ -34,9 +34,20 @@ namespace nzw.Controllers
             }
             else
             {
+                //if ("噢易云服务器;噢易云终端(X86ARM);噢易云一体机(X86ARM);".Contains(id + ";"))
+                //{
+                //   return RedirectToAction("CloudService", new { @id="硬件配置"});
+                //}
+                //else
+                {
                 return View(id);
+                }
 
             }
+        }
+        public ActionResult CloudService(string id)
+        {
+            return View(id);
         }
     }
 }
