@@ -47,7 +47,7 @@ namespace nzw.Controllers
         }
         public ActionResult CloudService(string id)
         {
-            return View(id);
+            return View("CloudService/" + id);
         }
     }
 }
