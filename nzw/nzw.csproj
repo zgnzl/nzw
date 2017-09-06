@@ -159,7 +159,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\active_slider_control.png" />
     <Content Include="Images\photo_frame01.png" />
+    <Content Include="Images\slider_control.png" />
     <Content Include="Images\ztxhkj\bg.jpg" />
     <Content Include="Images\ztxhkj\bg1.jpg" />
     <Content Include="Images\ztxhkj\CloudService\1.gif" />
@@ -215,6 +217,7 @@
     <Content Include="Images\ztxhkj\CloudService\tushuguan-banner.gif" />
     <Content Include="Images\ztxhkj\CloudService\tushuguan-zi.gif" />
     <Content Include="Images\ztxhkj\CloudService\VDI-banner02.jpg" />
+    <Content Include="Images\ztxhkj\CloudService\VDI-banner03.jpg" />
     <Content Include="Images\ztxhkj\CloudService\VDI-banner04.jpg" />
     <Content Include="Images\ztxhkj\CloudService\yunnan.png" />
     <Content Include="Images\ztxhkj\CloudService\yunnan02.png" />
@@ -458,7 +461,6 @@
     <Content Include="Views\Home\CloudService\AL多媒体教室.cshtml" />
     <Content Include="Views\Home\CloudService\典型案例.cshtml" />
     <Content Include="Views\Home\CloudService\帮助.cshtml" />
-    <Content Include="Views\Home\CloudService\快.cshtml" />
     <Content Include="Views\Home\CloudService\AL图书馆.cshtml" />
     <Content Include="Views\Home\CloudService\图书馆.cshtml" />
     <Content Include="Views\Home\CloudService\多媒体教室.cshtml" />

@@ -16,14 +16,14 @@
     }
 </style>
 <script>
-            $(function () {
-                $(".zhuye").mouseover(function () {
-                    $(this).children("ul").show();
-                }).mouseleave(function () {
-                    $(this).children("ul").hide();
-                });
+    $(function () {
+        $(".zhuye").mouseover(function () {
+            $(this).children("ul").show();
+        }).mouseleave(function () {
+            $(this).children("ul").hide();
+        });
 
-            });
+    });
 </script>
 <div id="oe-nav" class="oe-nav-wrapper oe-nav-bg">
     <div class="oe-nav-inner">
@@ -76,16 +76,52 @@
         </div>
     </div>
 </div>
-<div id="et-slider-wrapper" class=" et_slider_auto et_slider_speed_7000">
-    <div id="et-slides" >
-        <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner04.jpg&quot;); opacity: 0; display: none;"></div> 
-    <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner02.jpg&quot;); display: none; opacity: 0;"></div> 
-    <!-- <div class="et-slide" style="background-image:url(../../Images/ztxhkj/cloudservice/VDI-banner03.jpg);"></div> --> 
-    <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/banner.jpg&quot;); display: block; opacity: 1;"> 
-        <a href="http://www.os-easy.com/edu-cloud/chanpin.html" class="morez">查看详细</a> </div>
-    </div> <div id="et-slider-controls">
-        <div class="container">
-            <div class="et-controllers"><a href="#" class="">1</a><a href="#" class="">2</a><a href="#" class="et-active-control">3</a></div>
+<script>
+    $(function () {
+        function paly()
+        {
+            var index = $("#et-slider-controls .et-active-control").index();
+            $("#et-slides div").eq(index).hide();
+            $("#et-slider-controls").find("a").eq(index).removeClass("et-active-control");
+            if (index == 3) {
+                $("#et-slides div").eq(0).show();
+                $("#et-slider-controls").find("a").eq(0).addClass("et-active-control");
+            } else {
+                $("#et-slides div").eq(index + 1).show();
+                $("#et-slider-controls").find("a").eq(index + 1).addClass("et-active-control");
+            }
+        }
+        var interval =setInterval(function () {
+            paly();  
+        }, 3000);
+        $("#et-slider-controls a").click(function () {
+            clearInterval(interval);
+            setTimeout(function () {
+                interval = setInterval(function () {
+                    paly();
+                }, 3000);},7000);
+            var index1 = $("#et-slider-controls .et-active-control").index();
+            var index = $(this).index();
+            $("#et-slides div").eq(index1).hide();
+            $("#et-slider-controls").find("a").eq(index1).removeClass("et-active-control");
+            $("#et-slides div").eq(index).show();
+            $("#et-slider-controls").find("a").eq(index).addClass("et-active-control");
+          
+        });
+    });
+</script>
+<div id="et-slider-wrapper" class=" et_slider_auto et_slider_speed_7000" style="width: 1366px;left: -80px;">
+    <div id="et-slides">
+        <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner04.jpg&quot;); display: none;"></div>
+        <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner02.jpg&quot;); display: none;"></div>
+        <div class="et-slide" style="background-image:url(../../Images/ztxhkj/cloudservice/VDI-banner03.jpg);display: none;"></div>
+        <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/banner.jpg&quot;); display: block; ">
+            <a href="~/Home/CloudService/产品介绍" class="morez">查看详细</a>
         </div>
-    </div><div class="et-slider-arrows"><a class="et-arrow-prev" href="#">Previous</a><a class="et-arrow-next" href="#">Next</a></div>
+    </div> 
 </div>
+<div id="et-slider-controls">
+    <div class="container">
+        <div class="et-controllers"><a  >1</a><a class="">2</a><a  class="">3</a><a  class="et-active-control">4</a></div>
+    </div>
+</div>@*<div class="et-slider-arrows"><a class="et-arrow-prev" href="#">Previous</a><a class="et-arrow-next" href="#">Next</a></div>*@

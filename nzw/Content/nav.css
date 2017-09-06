@@ -329,13 +329,14 @@ a {
 }
 
 .list-sous {
-	width: 400px;
-	float: right;
-	height: 28px;
-	vertical-align: middle;
-	border: 10px solid #737478;
-	border-radius: 4px;
-	margin-top: 278px;
+    width: 380px;
+    float: right;
+    height: 18px;
+    line-height: 8px;
+    vertical-align: middle;
+    border: 10px solid #737478;
+    border-radius: 4px;
+    margin-top: 278px;
 }
 
 .list-ssuo {
@@ -677,5 +678,5 @@ a {
 }
 
 .oe-case-biaoge .table-datetime-td-width {
-    width: 95px;
+    width: 108px;
 }
