@@ -20,6 +20,7 @@
     }, 6666);
     function getMore(sid, obj)
     {
+        window.location.href ="@Request.ApplicationPath"+ "/home/Anli/";
         $("#" + sid).toggle();
         if ($("#" + sid).is(":hidden")) { 
             $(obj).html("查看更多 &raquo;");

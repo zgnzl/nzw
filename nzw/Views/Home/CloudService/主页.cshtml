@@ -78,6 +78,7 @@
 </div>
 <script>
     $(function () {
+        $("footer").parent("div").width(1811);
         function paly()
         {
             var index = $("#et-slider-controls .et-active-control").index();
@@ -93,13 +94,13 @@
         }
         var interval =setInterval(function () {
             paly();  
-        }, 3000);
+        }, 5000);
         $("#et-slider-controls a").click(function () {
-            clearInterval(interval);
+            clearInterval();
             setTimeout(function () {
                 interval = setInterval(function () {
                     paly();
-                }, 3000);},7000);
+                }, 5000);},9000);
             var index1 = $("#et-slider-controls .et-active-control").index();
             var index = $(this).index();
             $("#et-slides div").eq(index1).hide();
@@ -110,7 +111,7 @@
         });
     });
 </script>
-<div id="et-slider-wrapper" class=" et_slider_auto et_slider_speed_7000" style="width: 1366px;left: -80px;">
+<div id="et-slider-wrapper" class=" et_slider_auto et_slider_speed_7000" style="width: 1680px;left: -80px;">
     <div id="et-slides">
         <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner04.jpg&quot;); display: none;"></div>
         <div class="et-slide" style="background-image: url(&quot;../../Images/ztxhkj/cloudservice/VDI-banner02.jpg&quot;); display: none;"></div>

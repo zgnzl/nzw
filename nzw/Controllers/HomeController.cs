@@ -42,7 +42,7 @@ namespace nzw.Controllers
             return View("CloudService/" + id);
         }
 
-        public ActionResult Anli(string id)
+        public ActionResult AnLi(string id)
         {
             if (string.IsNullOrEmpty(id))
             {
@@ -52,6 +52,23 @@ namespace nzw.Controllers
             {
                 return View(id);
             }
+        }
+
+        public ActionResult AnLiDetail(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return RedirectToAction("AnLi", new { id = "" });
+            }
+            else
+            {
+                return View("AnLiDetail/"+id);
+            }
+        }
+        public ActionResult SearchAnLi(string id)
+        {
+            string name = "";
+            return RedirectToAction("AnLiDetail",new { id=name});
         }
     }
 }

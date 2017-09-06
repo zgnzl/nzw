@@ -1,0 +1,361 @@
+﻿@{ 
+    ViewBag.Title = "湖北省荆门卫计委数据中心虚拟化改造";
+}
+@Styles.Render("~/content/product.css")
+<div class="oe-case-detail">
+    <!--banner区域--> <!--banner区域--> <div class="oe-banner-area-style05 swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide oe-banner-item" style="background-image: url('../../Images/ztxhkj/AnLiDetail/57b2b98c5e4b2.jpg')"></div> </div> <div class="swiper-pagination"></div> </div> <div class="container">
+        <div class="row oe-margin-bottom-30 oe-margin-top-30">
+            <div class="col-md-9 oe-content">
+                <h1>湖北省荆门卫计委数据中心虚拟化改造<br><small> &nbsp;&nbsp;&nbsp;&nbsp;日期：2016-07-28</small></h1> <div class="oe-content-style01">
+                    <div class="oe-box-item">
+                        <h2>
+                            用户需求
+                        </h2> <ol class=" list-paddingleft-2">
+                            <li>
+                                <p>
+                                    采用云计算和虚拟化技术搭建的云数据中心，整合服务器集群资源，建立计算资源池、存储资源池、网络资源池，实现业务数据集中存储管理，资源的弹性分配和调度，通过部署高可用性保障业务系统的连续性和可靠性。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    通过建立紧凑型IT体系和信息基础设施，采用界领先技术以适应未来各种应用对服务器、存储等基础架构的发展，实现高弹性、易扩展、高可用、统一管理调配的IT服务资源平台。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    在合理考虑设备利旧的基础上，适量增加部分高性能X86服务器，满足荆门市卫计委在未来2-3年内应用扩展的资源需求。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    建立一套合理、简便、高效的机房应用监控、管理机制，简化数据中心运维管理难度。
+                                </p>
+                            </li>
+                        </ol>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            资源规划
+                        </h2> <table class="table table-bordered table-hover" width="860">
+                            <tbody>
+                                <tr style=" text-align: center; background-color: red; color: #fff; font-size: 16px; font-weight: bold;" class="firstRow">
+                                    <td width="127">
+                                        虚拟机名称
+                                    </td>
+                                    <td width="66">
+                                        内存
+                                    </td>
+                                    <td width="54">
+                                        vCPU
+                                    </td>
+                                    <td width="71">
+                                        /boot分区
+                                    </td>
+                                    <td width="66">
+                                        swap
+                                    </td>
+                                    <td width="60">
+                                        /分区
+                                    </td>
+                                    <td width="104">
+                                        /var/lib/oe-ins tances-disk
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv01
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv02
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv03
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv04
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv05
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv06
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv07
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv08
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="127">
+                                        Oevserv09
+                                    </td>
+                                    <td width="66">
+                                        64G
+                                    </td>
+                                    <td width="54">
+                                        24
+                                    </td>
+                                    <td width="71">
+                                        200M
+                                    </td>
+                                    <td width="66">
+                                        30G
+                                    </td>
+                                    <td width="60">
+                                        100G
+                                    </td>
+                                    <td width="104">
+                                        148G
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            实施内容
+                        </h2> <p style="text-align: center;"> <img src="../../Images/ztxhkj/AnLiDetail/57a59afd7dc3f.jpg" title="荆门卫计委.jpg" alt="荆门卫计委.jpg"> </p>
+                    </div>
+                </div>
+            </div> <div class="col-md-3">
+                <div class="panel panel-default oe-case-right-list">
+                    <div class="panel-heading"> <a href="/list/index/id/21.html"><h3>医疗/卫生 <small>HEALTH CARE</small></h3></a> </div> <div class="panel-body"> <div class="oe-banner-area" style="background-image: url('/data/upload//00000000/anli-yiliaoweisheng.jpg')"></div> </div> <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/330.html" data-toggle="tooltip" title="助推泰州市基本公共卫生服务信息系统升级">
+                                        助推泰州市基本公共卫生服务信息系统升级
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/11/18</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/37.html" data-toggle="tooltip" title="湖北江陵卫计委虚拟化平台建设">
+                                        湖北江陵卫计委虚拟化平台建设
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/36.html" data-toggle="tooltip" title="湖北荆州卫计委云数据中心案例">
+                                        湖北荆州卫计委云数据中心案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/35.html" data-toggle="tooltip" title="湖北省孝感市卫生局云数据中心案例">
+                                        湖北省孝感市卫生局云数据中心案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/34.html" data-toggle="tooltip" title="荆州市沙市区卫计局数据中心虚拟化改造">
+                                        荆州市沙市区卫计局数据中心虚拟化改造
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <div class="panel panel-default oe-case-right-list-new">
+                    <div class="panel-heading"> <h3>最新案例</h3> </div> <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">1</span> <a href="/article/index/id/346.html">
+                                浙江省德清县教育局
+                            </a><br>
+                            2017/06/30
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span> <a href="/article/index/id/345.html">
+                                安徽省无为县教育局
+                            </a><br>
+                            2017/06/29
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> <a href="/article/index/id/343.html">
+                                西华大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">4</span> <a href="/article/index/id/342.html">
+                                四川师范大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">5</span> <a href="/article/index/id/335.html">
+                                广东工业大学实验教学部桌面云应用案例
+                            </a><br>
+                            2016/12/07
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

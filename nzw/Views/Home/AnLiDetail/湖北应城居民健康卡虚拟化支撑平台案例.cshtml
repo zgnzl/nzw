@@ -1,0 +1,91 @@
+﻿@{ 
+    ViewBag.Title = "湖北应城居民健康卡虚拟化支撑平台案例";
+}
+@Styles.Render("~/content/product.css")
+<div class="oe-case-detail">
+    <!--banner区域--> <!--banner区域--> <div class="oe-banner-area-style05 swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide oe-banner-item" style="background-image: url('../../Images/ztxhkj/AnLiDetail/57b2b98c5e4b2.jpg')"></div> </div> <div class="swiper-pagination"></div> </div> <div class="container">
+        <div class="row oe-margin-bottom-30 oe-margin-top-30">
+            <div class="col-md-9 oe-content"> <h1>湖北应城居民健康卡虚拟化支撑平台案例<br><small> &nbsp;&nbsp;&nbsp;&nbsp;日期：2016-07-28</small></h1> <div class="oe-content-style01"><div class="oe-box-item"><h2>项目背景</h2><p>为响应卫生信息化建设的“4631-2工程”、国家卫生计生委和中医药管理局联合印发《关于加快推进人口健康信息化建设的指导意见》， 应城市卫计委主力着手居民健康卡业务、虚拟化改造，该业务需要统筹建设以全员人口信息、电子健康档案和电子病历三大数据库为基础，公共卫生、计划生育、医疗服务、医疗保障、药品管理、综合管理六大业务应用为重点的人口健康信息化工程。<br>通过居民健康卡建设，实现居民与医疗机构之间、不同医疗机构之间、医疗机构与社会公共服务等相关部门之间的信息互通共享，推进深化医改、优化服务流程，改变就医模式、实现医疗卫生机构服务协同，方便群众就医和健康管理。从而为居民提供便利的预防、医疗、保健、康复等医疗卫生服务和丰富的个人金融扩展服务，解决看病难、看病贵问题以及多方面满足人民健康需求，最终实现全国范围跨机构跨地域就医保健“一卡通”。</p></div><div class="oe-box-item"><h2>用户需求</h2><ul class=" list-paddingleft-2"><li><p><span style="color: rgb(222, 59, 10);">硬件资源匮乏</span></p></li></ul><p>为保障居民健康卡业务承载平台，原有硬件资源不能承载本次应用的部署，需要扩展相应物理硬件（包含网络、服务器、存储设备）。</p><ul class=" list-paddingleft-2"><li><p><span style="color: rgb(222, 59, 10);">改变原有机房传统架构，采用云计</span><span style="color: rgb(222, 59, 10);">算模式构建</span></p></li></ul><p>原有机房采用传统“专机专用”模式构建，1：1配置，在资源使用率、耗能、空间占用、业务连续性差、业务上线周期长、管理混乱、缺乏备份体系等等方面都存在弊端，需要采用云计算、虚拟化模式构建全新的数据中心。</p><ul class=" list-paddingleft-2"><li><p><span style="color: rgb(222, 59, 10);">迁移原有应用至虚拟化平台</span></p></li></ul><p>需要将原有应用从单机环境下无缝迁移到虚拟化环境，使用原厂专用P2V工具实现，保障应用无障碍迁移。</p><ul class=" list-paddingleft-2"><li><p><span style="color: rgb(222, 59, 10);">建立统一的运维管理体系</span></p></li></ul><p>由于单位内技术能力的问题，原有业务系统运维由集成商负责，单位人员对应用、系统、网络、服务器、存储等资源情况无法掌控，需要建立一套简单、明了的运维管理体系，使卫计局能够自主掌控数据中心运行情况。</p><ul class=" list-paddingleft-2"><li><p><span style="color: rgb(222, 59, 10);">建立异地数据备份机制</span></p></li></ul><p>现有环境只有本地数据备份，为满足国家卫计单位政策及等保要求，需要建立完整的数据异地备份机制，保障数据安全。</p></div><div class="oe-box-item"><h2>解决方案</h2><ol class=" list-paddingleft-2"><li><p>利用噢易服务器虚拟化软件，将原有利旧服务器、新购服务器组成一个统一资源池，使应用摆脱对单一物理硬件的依赖，实现“按需分配”。</p></li><li><p>迁移原有应用至虚拟化平台中，理由虚拟化软件中的动态迁移、负载均衡、高可用、计划任务等特性，实现应用连续性要求。</p></li><li><p>利用虚拟化管理平台中的可视化监控、管理功能，实现统一运维管理，方便卫计局相关人员轻松上手，了解掌控整体数据中心运行状况。</p></li><li><p>利用管理监控功能实现故障及时告警功能，方便管理员及时处理故障问题。</p></li><li><p>建立异地数据备份机制（包含虚拟化系统、虚拟化管理节点）。</p></li></ol></div><div class="oe-box-item"><h2>方案特点</h2><h3><span style="color: rgb(222, 59, 10); font-size: 17px;">降低投资、提高资源利用率</span></h3><p>通过虚拟化技术有效的利用物理硬件的CPU、内存资源，有效的降低了物理硬件的投入，并且从数据中心空间成本、电力成本、管理人员成本、集成服务等多个方面整体降低了信息中心运营成本，降低投资。</p><h3><span style="color: rgb(222, 59, 10); font-size: 17px;">业务更连续、更可靠</span></h3><p>通过数据库系统双机RAC、基础平台虚拟化、高可用、负载均衡、动态资源调度、主备存储搭建等技术手段，实现单位内部应用更连续、更可靠。</p><h3><span style="color: rgb(222, 59, 10); font-size: 17px;">数据、网络更安全</span></h3><p>采用主备存储搭建模式，当主存储故障后，备份存储能自动接管应用资源，达到应用备份的目的，同时通过虚拟化一体备份软件，将业务数据、系统数据、管理数据、整体备份到异地远端，增加主机房灾难情况下的数据安全。 <br>同时增加网络安全防火墙，解决了现有数据中心网络安全方面的短板，保障居民健康卡业务安全上线。</p><h3><span style="color: rgb(222, 59, 10); font-size: 17px;">简化管理、方便维护</span></h3><p>通过虚拟化技术加快新应用的部署，大大降低服务器重建和应用上线时间。<br>通过虚拟化技术使硬件维护从原来数天/周变更成为1 - 3小时，大大简化了维护的难度，虚拟化管理软件提供了丰富的远程统一管理和控制界面，实现足不出户，大幅度的简化了大量服务器的运维管理工作。</p><h3><span style="color: rgb(222, 59, 10); font-size: 17px;">满足未来应用扩展需求</span></h3><p>通过虚拟化建立了统一的物理资源池，新应用系统上线仅仅需要从资源池中划分即可，缩短了原有架构中的审批、招标、采购、测试、上线等复杂流程。本次资源池扩展以后可以满足未来3-5年内应用需求。</p></div></div> </div> <div class="col-md-3">
+                <div class="panel panel-default oe-case-right-list">
+                    <div class="panel-heading"> <a href="/list/index/id/21.html"><h3>医疗/卫生 <small>HEALTH CARE</small></h3></a> </div> <div class="panel-body"> <div class="oe-banner-area" style="background-image: url('/data/upload//00000000/anli-yiliaoweisheng.jpg')"></div> </div> <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/330.html" data-toggle="tooltip" title="助推泰州市基本公共卫生服务信息系统升级">
+                                        助推泰州市基本公共卫生服务信息系统升级
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/11/18</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/37.html" data-toggle="tooltip" title="湖北江陵卫计委虚拟化平台建设">
+                                        湖北江陵卫计委虚拟化平台建设
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/36.html" data-toggle="tooltip" title="湖北荆州卫计委云数据中心案例">
+                                        湖北荆州卫计委云数据中心案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/35.html" data-toggle="tooltip" title="湖北省孝感市卫生局云数据中心案例">
+                                        湖北省孝感市卫生局云数据中心案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/article/index/id/34.html" data-toggle="tooltip" title="荆州市沙市区卫计局数据中心虚拟化改造">
+                                        荆州市沙市区卫计局数据中心虚拟化改造
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <div class="panel panel-default oe-case-right-list-new">
+                    <div class="panel-heading"> <h3>最新案例</h3> </div> <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">1</span> <a href="/article/index/id/346.html">
+                                浙江省德清县教育局
+                            </a><br>
+                            2017/06/30
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span> <a href="/article/index/id/345.html">
+                                安徽省无为县教育局
+                            </a><br>
+                            2017/06/29
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> <a href="/article/index/id/343.html">
+                                西华大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">4</span> <a href="/article/index/id/342.html">
+                                四川师范大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">5</span> <a href="/article/index/id/335.html">
+                                广东工业大学实验教学部桌面云应用案例
+                            </a><br>
+                            2016/12/07
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
