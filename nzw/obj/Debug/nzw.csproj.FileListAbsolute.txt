@@ -145,4 +145,3 @@ D:\Git_Asp.net\nzw\nzw\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.dll
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.pdb
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.csproj.CoreCompileInputs.cache
-D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache

@@ -23,7 +23,7 @@ namespace nzw.Controllers
 
         public ActionResult Contact()
         {
-            return View(); 
+            return View();
         }
         public ActionResult ZhaoPin()
         {
@@ -65,24 +65,27 @@ namespace nzw.Controllers
             }
             else
             {
-                return View("AnLiDetail/"+id);
+                return View("AnLiDetail/" + id);
             }
         }
-        public ActionResult SearchAnLi(string id)
+        public ActionResult SearchAnLi(string keyword)
         {
-            ViewBag.keyword = id;
-            ViewBag.list = GetAnLiDetailList().FindAll(c=>c.Contains(id));
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                ViewBag.keyword = keyword;
+                ViewBag.list = GetAnLiDetailList().FindAll(c => c.Contains(keyword));
+            }
             return View();
         }
         public List<string> GetAnLiDetailList()
         {
             List<string> listanli = caching.Get("listanli") as List<string>;
-            if(listanli==null)
+            if (listanli == null)
             {
                 listanli = new List<string>();
                 string path = Server.MapPath("~/views/Home/anlidetail");
                 DirectoryInfo dir = new DirectoryInfo(path);
-                foreach(FileInfo fileinfo in dir.GetFiles())
+                foreach (FileInfo fileinfo in dir.GetFiles())
                 {
                     listanli.Add(fileinfo.Name.Replace(".cshtml", ""));
                 }

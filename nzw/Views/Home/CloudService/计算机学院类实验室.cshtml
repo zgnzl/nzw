@@ -12,6 +12,15 @@
     }
 </style>
 @Styles.Render("~/Content/nav.css")
+<script>
+    function ANquery() {
+        if ($("#case_query").val() == "" || $("#case_query").val() == "请输入案例名称") {
+            alert("请输入案例名称");
+        } else {
+            window.location.href = "@Request.ApplicationPath" + "/Home/SearchAnLi/?keyword=" + $("#case_query").val();
+        }
+    };
+</script>
 <div class="col-md-offset-3 col-md-9">
     <div class="row">
         <div class="col-md-12" style="width:80%;">
@@ -25,7 +34,7 @@
                     <div class="col-md-4"></div> <div class="col-md-4">
                         <div class="input-group list-sous">
                            <!-- 搜索框开始--> <input type="text" class="form-control span2" id="case_query" placeholder="请输入案例名称">
-                            <span class="input-group-btn"><button class=" list-ssuo" type="button" id="case_query_btn"></button></span>
+                            <span class="input-group-btn"><button class=" list-ssuo" type="button" onclick="ANquery()" id="case_query_btn"></button></span>
                         </div>
                         <!--搜索框 结束-->
                     </div> <div class="col-md-4">
@@ -35,51 +44,51 @@
                             <table class="table" id="case_list">
                                 <tr>
                                     <td class="table-datetime-td-width">2017-06-30</td>
-                                    <td><a  data-toggle="tooltip" title="浙江省德清县教育局">浙江省德清县教育局</a></td>
+                                    <td><a href="~/home/AnLiDetail/浙江省德清县教育局" data-toggle="tooltip" title="浙江省德清县教育局">浙江省德清县教育局</a></td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2017-06-29</td>
-                                    <td><a  data-toggle="tooltip" title="安徽省无为县教育局">安徽省无为县教育局</a></td>
+                                    <td><a href="~/home/AnLiDetail/安徽省无为县教育局" data-toggle="tooltip" title="安徽省无为县教育局">安徽省无为县教育局</a></td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2017-06-13</td>
-                                    <td><a  data-toggle="tooltip" title="西华大学">西华大学</a></td>
+                                    <td><a href="~/home/AnLiDetail/西华大学" data-toggle="tooltip" title="西华大学">西华大学</a></td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2017-06-13</td>
-                                    <td><a  data-toggle="tooltip" title="四川师范大学">四川师范大学</a></td>
+                                    <td><a href="~/home/AnLiDetail/四川师范大学" data-toggle="tooltip" title="四川师范大学">四川师范大学</a></td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-12-07</td>
-                                    <td><a  data-toggle="tooltip" title="广东工业大学实验教学部桌面云应用案例">广东工业大学实验教学部桌面云应用案例</a></td>
+                                    <td><a href="~/home/AnLiDetail/广东工业大学实验教学部桌面云应用案例" data-toggle="tooltip" title="广东工业大学实验教学部桌面云应用案例">广东工业大学实验教学部桌面云应用案例</a></td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-11-18</td>
                                     <td>
-                                        <a  data-toggle="tooltip" title="助推泰州市基本公共卫生服务信息系统升级">助推泰州市基本公共卫生服务信息系统升级</a>
+                                        <a href="~/home/AnLiDetail/助推泰州市基本公共卫生服务信息系统升级" data-toggle="tooltip" title="助推泰州市基本公共卫生服务信息系统升级">助推泰州市基本公共卫生服务信息系统升级</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-09-05</td>
                                     <td>
-                                        <a  data-toggle="tooltip" title="黄冈国土“原有业务”和“不动产业务”完美切换至云端">黄冈国土“原有业务”和“不动产业务”完美切换至云端</a>
+                                        <a href="~/home/AnLiDetail/黄冈国土“原有业务”和“不动产业务”完美切换至云端" data-toggle="tooltip" title="黄冈国土“原有业务”和“不动产业务”完美切换至云端">黄冈国土“原有业务”和“不动产业务”完美切换至云端</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-08-03</td>
                                     <td>
-                                        <a  data-toggle="tooltip" title="鄂州警务综合应用系统升级与虚拟化改造案例">鄂州警务综合应用系统升级与虚拟化改造案例</a>
+                                        <a href="~/home/AnLiDetail/鄂州警务综合应用系统升级与虚拟化改造案例" data-toggle="tooltip" title="鄂州警务综合应用系统升级与虚拟化改造案例">鄂州警务综合应用系统升级与虚拟化改造案例</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-08-03</td>
                                     <td>
-                                        <a  data-toggle="tooltip" title="恩施州警务综合应用系统升级与虚拟化改造案例">恩施州警务综合应用系统升级与虚拟化改造案例</a>
+                                        <a href="~/home/AnLiDetail/恩施州警务综合应用系统升级与虚拟化改造案例" data-toggle="tooltip" title="恩施州警务综合应用系统升级与虚拟化改造案例">恩施州警务综合应用系统升级与虚拟化改造案例</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="table-datetime-td-width">2016-08-03</td>
-                                    <td><a  data-toggle="tooltip" title="随州市公安云平台建设案例">随州市公安云平台建设案例</a></td>
+                                    <td><a href="~/home/AnLiDetail/随州市公安云平台建设案例" data-toggle="tooltip" title="随州市公安云平台建设案例">随州市公安云平台建设案例</a></td>
                                 </tr>
                             </table>
                         </div>
