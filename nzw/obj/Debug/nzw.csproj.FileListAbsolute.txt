@@ -69,7 +69,6 @@ E:\TeamFondationServers\nzw\nzw\bin\zh-Hans\System.Web.Razor.resources.dll
 E:\TeamFondationServers\nzw\nzw\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\TeamFondationServers\nzw\nzw\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\TeamFondationServers\nzw\nzw\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache
 E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.dll
 E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.pdb
 D:\Git_Asp.net\nzw\nzw\bin\ApplicationInsights.config
@@ -147,3 +146,4 @@ D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.dll
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.pdb
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.csproj.CoreCompileInputs.cache
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache
+E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache
