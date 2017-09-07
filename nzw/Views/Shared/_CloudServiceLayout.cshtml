@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.KeyWords = "北京中泰祥和科技有限公司,智慧校园,教育云,云平台,云桌面,桌面云,桌面虚拟化,云课堂,云教室,服务器虚拟化,云计算,虚拟化";
+    ViewBag.Description = "北京中泰祥和科技有限公司，专门为机房提供云桌面，拥有桌面虚拟化、服务器虚拟化、云平台、虚拟备份系列产品，并将云计算技术与行业应用深入结合，为用户提供智慧校园云、公安云、社保云等专业的行业云解决方案 经理：聂立，联系电话：15801473663";
+    ViewBag.CompanyName = "北京中泰祥和科技有限公司";
+}
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -6,16 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="@ViewBag.KeyWords" />
     <meta name="description" content="@ViewBag.Description" />
-    <title>@ViewBag.Title</title>
+    <title>@(ViewBag.Title+" "+ ViewBag.CompanyName)</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
 </head>
-@{
-    ViewBag.KeyWords = "北京中泰祥和科技有限公司,云桌面,虚拟化,机房管理,电子元器件,硬盘保护";
-    ViewBag.Description = "北京中泰祥和科技有限公司，专门为机房提供云桌面，虚拟化，远程管理，高校机房管理，电子元器件，硬盘保护；经理：聂立，联系电话：15801473663";
-    ViewBag.CompanyName = "北京-中泰祥和科技有限公司";
-}
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
