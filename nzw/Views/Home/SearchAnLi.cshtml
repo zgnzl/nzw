@@ -1,11 +1,15 @@
 ﻿@{
     ViewBag.Title = "案例检索";
     string keyword = ViewBag.keyword;
-    List<string> searchlist = ViewBag.list;
+    List<string> searchlist = ViewBag.list as List<string>;
 }
-
+<style>
+    body {
+        background-image: url(../../Images/ztxhkj/cloudservice/case-bj-img02.jpg);
+    }
+</style>
 @Styles.Render("~/content/product.css")
-<div class="oe-case-2j"  style="background:url(../Images/ztxhkj/cloudservice/case-bj-img02.jpg) no-repeat center top;min-height:500px">
+<div class="oe-case-2j" style="min-height:500px">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -47,15 +51,32 @@
                         </div>
                         <div class="oe-box-container">
                             <div class="row oe-box-item" style="background-color:transparent;padding-left:50px">
-                              @{ foreach (string name in searchlist)
-                                  {
-                                    <h1>
-                                        <a href="~/home/AnLiDetail/@name">@name.Replace(keyword,"<span style='color:red'>"+ keyword + "</span>")</a>
-                                    </h1>
-                                  }
-                            }
-                                    
-                                
+
+                                @{
+                                    if (searchlist == null || searchlist.Count == 0)
+                                    {
+                                        <h1>
+                                            <span style='color:red'>检索结果为空</span>
+                                        </h1>
+                                    }
+                                    else
+                                    {
+                                        int i = 1;
+                                        foreach (string name in searchlist)
+                                        {
+                                            if (i > 1)
+                                            {
+                                                <hr />
+                                            }
+                                            <h1>
+                                                <a href="~/home/AnLiDetail/@name">@Html.Raw((i++) +". "+name.Replace(keyword, "<span style='color:red'>" + keyword + "</span>"))</a>
+                                            </h1>
+                                           
+                                        }
+                                    }
+                                }
+
+
                             </div>
                         </div>
                         <nav> <ul class="pager"><!-- 共有文章 5 篇 --></ul> </nav>

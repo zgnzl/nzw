@@ -71,7 +71,7 @@ namespace nzw.Controllers
         public ActionResult SearchAnLi(string id)
         {
             ViewBag.keyword = id;
-            ViewBag.list = GetAnLiDetailList().Select(c=>c.Contains(id));
+            ViewBag.list = GetAnLiDetailList().FindAll(c=>c.Contains(id));
             return View();
         }
         public List<string> GetAnLiDetailList()
@@ -80,13 +80,13 @@ namespace nzw.Controllers
             if(listanli==null)
             {
                 listanli = new List<string>();
-                string path = Server.MapPath("~/views/anlidetail");
+                string path = Server.MapPath("~/views/Home/anlidetail");
                 DirectoryInfo dir = new DirectoryInfo(path);
                 foreach(FileInfo fileinfo in dir.GetFiles())
                 {
                     listanli.Add(fileinfo.Name.Replace(".cshtml", ""));
                 }
-                caching.Add("listanli", listanli, null, Cache.NoAbsoluteExpiration, TimeSpan.MaxValue, CacheItemPriority.AboveNormal, null);
+                caching.Add("listanli", listanli, null, Cache.NoAbsoluteExpiration, TimeSpan.FromDays(30), CacheItemPriority.AboveNormal, null);
             }
             return listanli;
         }
