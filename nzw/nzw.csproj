@@ -238,8 +238,10 @@
     <Content Include="Images\ztxhkj\AnLiDetail\5954ba9eddb1d.jpg" />
     <Content Include="Images\ztxhkj\AnLiDetail\5955ebe989f25.jpg" />
     <Content Include="Images\ztxhkj\AnLiDetail\anli-gaojiao.jpg" />
+    <Content Include="Images\ztxhkj\AnLiDetail\anli-gongjianfa.jpg" />
     <Content Include="Images\ztxhkj\AnLiDetail\anli-guotu.jpg" />
     <Content Include="Images\ztxhkj\AnLiDetail\anli-shebao.jpg" />
+    <Content Include="Images\ztxhkj\AnLiDetail\anli-yiliaoweisheng.jpg" />
     <Content Include="Images\ztxhkj\Anli\57abec27ab3b2.jpg" />
     <Content Include="Images\ztxhkj\Anli\57abf244d1007.jpg" />
     <Content Include="Images\ztxhkj\Anli\57abf26d35e70.jpg" />
@@ -555,6 +557,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\zg69\main.js" />
     <Content Include="Scripts\zg69\wenziyun.js" />
+    <Content Include="Images\ztxhkj\AnLiDetail\anli-pujiao.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
