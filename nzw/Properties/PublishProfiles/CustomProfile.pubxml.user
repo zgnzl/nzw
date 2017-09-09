@@ -1,0 +1,1768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\IIS\BGZTXH</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>09/09/2017 11:51:30</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>09/09/2017 11:51:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>06/20/2017 20:52:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/20/2017 20:52:22</publishTime>
+    </File>
+    <File Include="bin/nzw.dll">
+      <publishTime>09/09/2017 11:51:12</publishTime>
+    </File>
+    <File Include="bin/nzw.pdb">
+      <publishTime>09/09/2017 11:51:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/20/2017 20:52:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/20/2017 20:52:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/20/2017 20:52:23</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
+      <publishTime>06/20/2017 20:52:18</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Optimization.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
+      <publishTime>06/20/2017 20:52:19</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Content/nav.css">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Content/product.css">
+      <publishTime>09/06/2017 21:44:01</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>09/05/2017 22:11:08</publishTime>
+    </File>
+    <File Include="Content/swiper.min.css">
+      <publishTime>09/03/2017 20:05:40</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>09/07/2017 22:36:41</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/05/2017 22:07:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="Images/active_slider_control.png">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/photo_frame01.png">
+      <publishTime>09/01/2017 22:10:24</publishTime>
+    </File>
+    <File Include="Images/slider_control.png">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abec27ab3b2.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf244d1007.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf26d35e70.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf316601db.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf3e33592d.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf89e1c4fe.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf8ddca0f6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf933a6dd6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf959b3181.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf991a489b.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf9b612e92.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf9d2af7c8.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abf9ec3c5d6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abfa03bc1c4.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abfa739d029.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57abfaa47dc8b.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac0a2414524.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac0a38ab9bf.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac11678a15c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac1183bb6b6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac119aa95b6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac11afbf457.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2aeb51b07.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b035a4d1.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b192e973.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b3144f1c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b4882bc7.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b5dad032.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b768d3d2.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2b94ebd52.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2baf66c87.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2bc67ad94.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2c24d2bef.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2c36aac4f.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2caf2f7b5.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2cd03720c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2cea4540f.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d04205b6.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d18ecb0c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d4b8f445.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d5d5ad49.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d798478b.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2d927cc7b.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2db10ae36.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2dca6109c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2de5caec3.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2dfc5cd91.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e1654aee.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e3349a24.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e5048a49.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e6680a47.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e7e3db76.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac2e9c2bb84.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57ac324e165e7.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/57cce8c55896b.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/582e70d8a24ec.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/589992b2b8c22.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/593f50bfa86ef.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/594ce71fb5c0c.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/5954c817d9238.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/Anli/59561d311465f.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/2016071829.jpg">
+      <publishTime>09/06/2017 22:39:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/2016071849.png">
+      <publishTime>09/06/2017 22:40:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/2016071858.png">
+      <publishTime>09/06/2017 22:42:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/579adb96664cf.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a056c61b692.png">
+      <publishTime>09/06/2017 22:42:14</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a05c6b2ad04.png">
+      <publishTime>09/06/2017 22:42:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a1494abfe61.png">
+      <publishTime>09/06/2017 22:40:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a162900af72.png">
+      <publishTime>09/06/2017 22:38:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a4449f7e3af.jpg">
+      <publishTime>09/06/2017 22:39:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a53528ce1ec.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5688f843d3.jpg">
+      <publishTime>09/06/2017 22:37:51</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5690f76307.jpg">
+      <publishTime>09/06/2017 22:41:38</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56922705a8.jpg">
+      <publishTime>09/06/2017 22:40:30</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56936d7268.jpg">
+      <publishTime>09/06/2017 22:41:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5698d058e4.jpg">
+      <publishTime>09/06/2017 22:41:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56ba06e8d3.jpg">
+      <publishTime>09/06/2017 22:42:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56bc16499a.jpg">
+      <publishTime>09/06/2017 22:42:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56bf24d17a.jpg">
+      <publishTime>09/06/2017 22:41:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56c6fb2284.jpg">
+      <publishTime>09/06/2017 22:42:37</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56cd398697.jpg">
+      <publishTime>09/06/2017 22:41:24</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a56ce7747ca.jpg">
+      <publishTime>09/06/2017 22:41:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a571003f6e9.jpg">
+      <publishTime>09/06/2017 22:38:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5719758dff.jpg">
+      <publishTime>09/06/2017 22:39:57</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5775d9f34c.png">
+      <publishTime>09/06/2017 22:41:44</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a58472f02e5.jpg">
+      <publishTime>09/06/2017 22:39:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5853375f63.jpg">
+      <publishTime>09/06/2017 22:42:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5859f935a1.jpg">
+      <publishTime>09/06/2017 22:38:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a585c687c7f.jpg">
+      <publishTime>09/06/2017 22:41:14</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a58ff4c41d0.jpg">
+      <publishTime>09/06/2017 22:43:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59020d5366.jpg">
+      <publishTime>09/06/2017 22:41:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59049d4cfd.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59070e794d.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a590a334b4d.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a590ea80411.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5910724dbc.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5912c41bc2.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a591613c461.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5917b74007.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5919a6abf5.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a591d2486e2.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a591fa6aaf3.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a592f5acb50.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a593305be44.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5937885dd5.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a593ddea8ef.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a596b3a24be.jpg">
+      <publishTime>09/06/2017 22:41:38</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5976d9e470.jpg">
+      <publishTime>09/06/2017 22:40:30</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5977a33df8.jpg">
+      <publishTime>09/06/2017 22:40:30</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5984f8d79e.png">
+      <publishTime>09/06/2017 22:40:30</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a5989a6ccc8.jpg">
+      <publishTime>09/06/2017 22:39:27</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a598d3e9105.jpg">
+      <publishTime>09/06/2017 22:39:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a598f84fa31.jpg">
+      <publishTime>09/06/2017 22:39:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59915d64a4.jpg">
+      <publishTime>09/06/2017 22:40:22</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59afd7dc3f.jpg">
+      <publishTime>09/06/2017 22:40:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57a59c69f1e72.jpg">
+      <publishTime>09/06/2017 22:40:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57b2a5922c170.jpg">
+      <publishTime>09/07/2017 22:36:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57b2b98c5e4b2.jpg">
+      <publishTime>09/06/2017 21:38:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/57cce0b3dd5ac.png">
+      <publishTime>09/06/2017 22:40:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/582e73e44c58c.jpg">
+      <publishTime>09/06/2017 22:43:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/582e746a397b8.png">
+      <publishTime>09/06/2017 22:43:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5899901229901.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589990354fd1d.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589990c2f0745.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589990f448c31.png">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5899912a00735.png">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5899915d22f15.png">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589991867acf5.png">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589991cf91e6c.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589991e617e6c.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/589991fff16b9.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5899922fb8595.jpg">
+      <publishTime>09/06/2017 22:39:05</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/593f49a188644.jpg">
+      <publishTime>09/06/2017 22:38:06</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/593fa53d45fe3.jpg">
+      <publishTime>09/06/2017 21:32:12</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5954ba9eddb1d.jpg">
+      <publishTime>09/06/2017 22:38:06</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/5955ebe989f25.jpg">
+      <publishTime>09/06/2017 22:42:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-gaojiao.jpg">
+      <publishTime>09/06/2017 21:32:12</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-gongjianfa.jpg">
+      <publishTime>09/08/2017 23:36:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-guotu.jpg">
+      <publishTime>09/07/2017 23:29:17</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-pujiao.jpg">
+      <publishTime>09/08/2017 23:22:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-shebao.jpg">
+      <publishTime>09/07/2017 23:02:57</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/AnLiDetail/anli-yiliaoweisheng.jpg">
+      <publishTime>09/08/2017 23:39:20</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/bg.jpg">
+      <publishTime>08/30/2017 22:07:54</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/bg1.jpg">
+      <publishTime>08/30/2017 22:07:53</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/1.gif">
+      <publishTime>09/04/2017 23:09:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/170724.jpg">
+      <publishTime>09/04/2017 23:01:10</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/2.gif">
+      <publishTime>09/04/2017 23:09:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/3.gif">
+      <publishTime>09/04/2017 23:09:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/4.gif">
+      <publishTime>09/04/2017 23:09:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/5.gif">
+      <publishTime>09/04/2017 23:09:02</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/6.gif">
+      <publishTime>09/05/2017 21:06:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/banner.jpg">
+      <publishTime>09/04/2017 21:34:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/case-bj-img02.jpg">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/case-shiyanshi-banner.jpg">
+      <publishTime>09/05/2017 21:45:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/case-wuda.gif">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/case-zhuanshi.jpg">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/changjingyingyong-img.jpg">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/chanpin-shipin.jpg">
+      <publishTime>09/04/2017 22:48:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/dianxinganli-list-img.jpg">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/dida.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/dida02.png">
+      <publishTime>09/05/2017 22:53:23</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/duomeiti-banner.jpg">
+      <publishTime>09/05/2017 21:45:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/duomeiti-jiazhi.png">
+      <publishTime>09/04/2017 23:18:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/duomeiti-pc.jpg">
+      <publishTime>09/05/2017 21:45:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/duomeiti-s.jpg">
+      <publishTime>09/05/2017 21:53:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/duomeitijiaoshi-zi.gif">
+      <publishTime>09/05/2017 21:45:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganpeizhi-img.jpg">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-banner.jpg">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-chaoronghe.jpg">
+      <publishTime>09/05/2017 21:46:07</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-kuai.jpg">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-ling.jpg">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-wen.jpg">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-xia.gif">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-yunpan.jpg">
+      <publishTime>09/05/2017 21:46:07</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-yunshiyan.jpg">
+      <publishTime>09/05/2017 21:46:07</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-yunweiguanli.jpg">
+      <publishTime>09/05/2017 21:46:07</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/fanganyoushi-zhun.jpg">
+      <publishTime>09/05/2017 23:05:03</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/guizhou.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/guizhou02.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/hezhou.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/hezhou02.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/idcard.png">
+      <publishTime>09/05/2017 21:06:55</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jiaoshi-b.jpg">
+      <publishTime>09/05/2017 22:29:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jiaoshibangong-banner.gif">
+      <publishTime>09/05/2017 21:45:38</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jiaoshibangong-pc.jpg">
+      <publishTime>09/04/2017 23:15:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jiaoshibangong-zi.gif">
+      <publishTime>09/05/2017 21:45:38</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jiejuefangan-xianzhuang.gif">
+      <publishTime>09/04/2017 23:18:49</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jy-ptn-banner.jpg">
+      <publishTime>09/04/2017 22:48:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jy-ptn-chanpjg.jpg">
+      <publishTime>09/04/2017 22:48:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/jy-ptn-guanlijm.jpg">
+      <publishTime>09/04/2017 22:48:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/sousuo.gif">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/tianjin.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/tianjin02.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/tsgzh-bh.jpg">
+      <publishTime>09/04/2017 23:15:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/tushuguan-banner.gif">
+      <publishTime>09/04/2017 23:10:00</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/tushuguan-zi.gif">
+      <publishTime>09/04/2017 23:17:20</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/VDI-banner02.jpg">
+      <publishTime>09/04/2017 21:34:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/VDI-banner03.jpg">
+      <publishTime>09/06/2017 20:21:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/VDI-banner04.jpg">
+      <publishTime>09/04/2017 21:34:50</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunnan.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunnan02.png">
+      <publishTime>09/05/2017 22:51:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunshiyanshi-banner.gif">
+      <publishTime>09/05/2017 21:06:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunshiyanshi-pc.png">
+      <publishTime>09/05/2017 21:06:55</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunshiyanshi-wu.jpg">
+      <publishTime>09/05/2017 21:06:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/CloudService/yunshiyanshi-zi.gif">
+      <publishTime>09/05/2017 21:18:11</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/jiejuefangan-beijing.jpg">
+      <publishTime>09/04/2017 22:41:27</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/jy-pdt-bg.jpg">
+      <publishTime>09/04/2017 22:48:52</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/LX.jpg">
+      <publishTime>08/30/2017 22:07:53</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/oseasy.png">
+      <publishTime>06/26/2017 20:21:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57972f1517ceb.jpg">
+      <publishTime>09/01/2017 22:56:37</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57984caab45fd.jpg">
+      <publishTime>09/01/2017 22:58:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57985486f1a1d.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579856ea28e9e.jpg">
+      <publishTime>09/01/2017 21:53:22</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57985cb460a45.jpg">
+      <publishTime>09/01/2017 22:51:12</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579862f7b1e8e.jpg">
+      <publishTime>09/01/2017 22:53:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579874b5d1710.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579b3d49a4f0f.jpg">
+      <publishTime>09/01/2017 23:10:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579b3d5da36f5.jpg">
+      <publishTime>09/01/2017 23:09:27</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579b3d7201382.jpg">
+      <publishTime>09/01/2017 23:07:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579b3d92af197.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/579b3f1c8ff17.jpg">
+      <publishTime>09/01/2017 23:11:47</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a18d0c60761.jpg">
+      <publishTime>09/03/2017 12:49:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a19854bd58a.jpg">
+      <publishTime>09/03/2017 12:49:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a198a720731.jpg">
+      <publishTime>09/03/2017 12:49:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a198ee29055.jpg">
+      <publishTime>09/03/2017 12:49:42</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2941f75d3a.jpg">
+      <publishTime>09/01/2017 22:58:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a294720350d.jpg">
+      <publishTime>09/03/2017 18:41:54</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2947b70286.jpg">
+      <publishTime>09/03/2017 18:41:54</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a294830b240.jpg">
+      <publishTime>09/03/2017 18:41:54</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2948a82ca8.jpg">
+      <publishTime>09/03/2017 18:41:54</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2a66f5b1b6.jpg">
+      <publishTime>09/01/2017 22:56:37</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2e3b0c2aef.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2e3d13af6a.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2e3d149cf5.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2e3d14febe.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2e3d150f47.jpg">
+      <publishTime>09/01/2017 23:13:09</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2fb373c988.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2fc9a5dd85.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a2fcb846f30.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a3e94880a5c.jpg">
+      <publishTime>09/01/2017 23:09:27</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a3fc77a63c7.jpg">
+      <publishTime>09/01/2017 22:53:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a40b7eda1ab.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a40b87cbe3a.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a40b918f0c7.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a40b98ba899.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4217042595.png">
+      <publishTime>09/01/2017 23:10:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4363081356.jpg">
+      <publishTime>09/01/2017 23:07:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a43754be974.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4376292062.jpg">
+      <publishTime>09/01/2017 23:00:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a43db57ca73.jpg">
+      <publishTime>09/01/2017 23:11:47</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a43db58005f.jpg">
+      <publishTime>09/01/2017 23:11:47</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4538c4a45f.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4539d03884.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a453a93d80f.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a453b188609.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a453c656041.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a453dfbae41.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a455005e5af.jpg">
+      <publishTime>09/01/2017 23:10:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a39663c6.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a426f835.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a493f92e.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a4e325ee.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a54dc11c.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a598fe6f.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a5f9de9c.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45a639149d.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45ffdbcb9e.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45ffddb8d3.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a45ffdde93c.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a46274edb47.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a462ff75a5a.png">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4632db60a9.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a4633539e6d.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a464f5ccf0a.jpg">
+      <publishTime>09/01/2017 23:06:26</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a5513b4461d.jpg">
+      <publishTime>09/01/2017 23:07:35</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57a93d3a1c3b3.jpg">
+      <publishTime>09/01/2017 21:45:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57abfa739d029.jpg">
+      <publishTime>09/01/2017 23:29:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57abfaa47dc8b.jpg">
+      <publishTime>09/01/2017 23:29:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac0a2414524.jpg">
+      <publishTime>09/01/2017 21:58:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac11678a15c.jpg">
+      <publishTime>09/01/2017 23:29:46</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac1183bb6b6.jpg">
+      <publishTime>09/01/2017 23:36:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac119aa95b6.jpg">
+      <publishTime>09/01/2017 23:36:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2aeb51b07.jpg">
+      <publishTime>09/03/2017 19:41:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2b035a4d1.jpg">
+      <publishTime>09/03/2017 19:41:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2b3144f1c.jpg">
+      <publishTime>09/03/2017 19:41:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2b4882bc7.jpg">
+      <publishTime>09/03/2017 19:41:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2b5dad032.jpg">
+      <publishTime>09/03/2017 19:41:48</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2b94ebd52.jpg">
+      <publishTime>09/03/2017 18:55:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2baf66c87.jpg">
+      <publishTime>09/03/2017 18:55:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2bc67ad94.jpg">
+      <publishTime>09/03/2017 18:55:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2c24d2bef.jpg">
+      <publishTime>09/03/2017 18:55:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2c36aac4f.jpg">
+      <publishTime>09/03/2017 18:55:16</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2caf2f7b5.jpg">
+      <publishTime>09/03/2017 12:57:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2cea4540f.jpg">
+      <publishTime>09/03/2017 12:57:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2d04205b6.jpg">
+      <publishTime>09/03/2017 12:57:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2d18ecb0c.jpg">
+      <publishTime>09/03/2017 12:57:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ac2d4b8f445.jpg">
+      <publishTime>09/03/2017 12:57:56</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b11d99ab5a0.jpg">
+      <publishTime>09/03/2017 19:32:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b11d99ad054.jpg">
+      <publishTime>09/03/2017 19:32:36</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b11d99ba9c0.jpg">
+      <publishTime>09/03/2017 19:31:28</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b812913089c.png">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b8178987756.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b8179ca6dee.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b817accf13a.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b817bc67bfc.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b817cae2e8b.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57b817dc59fb5.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57ba604ad9508.jpg">
+      <publishTime>09/01/2017 22:40:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb3f188af2.jpg">
+      <publishTime>09/03/2017 19:08:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb3f18a1d6.jpg">
+      <publishTime>09/03/2017 19:08:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb3f1a0c3f.jpg">
+      <publishTime>09/03/2017 19:08:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb3f1edc71.jpg">
+      <publishTime>09/03/2017 19:08:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb3f340389.jpg">
+      <publishTime>09/03/2017 19:08:59</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb61375d9e.jpg">
+      <publishTime>09/03/2017 19:19:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb61377c22.jpg">
+      <publishTime>09/03/2017 19:19:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/57bbb6137a619.jpg">
+      <publishTime>09/03/2017 19:19:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/58607877708aa.jpg">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5860b926b6452.jpg">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5881a2ca7037e.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5881a2dee2b92.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5881a2eccfb17.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937b63bd0be7.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937b75e986ea.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937b97951a2f.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937bb104f17f.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937bb39ae972.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c491d05d2.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c4a51d1a6.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c8d1cb7a0.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c937b8b8c.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c947202e8.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c960e6a07.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5937c96b968d2.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5938a71e3d290.png">
+      <publishTime>09/01/2017 22:54:33</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/59390bc34b3e7.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/59390cda5b5ff.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5939f6cf0479a.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5939fc4608b8e.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5939fdfdc4fdd.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5939fe3e4ef00.png">
+      <publishTime>09/01/2017 23:02:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a06fecb8d0.png">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a0720b4c4c.png">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a072e2f4be.png">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a073bcbbdd.png">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a1650c0533.jpg">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/593a17a147480.png">
+      <publishTime>09/01/2017 23:04:39</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5975da8482071.jpg">
+      <publishTime>09/03/2017 19:34:04</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5975dabbaffa0.jpg">
+      <publishTime>09/03/2017 19:34:04</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/5975dad44cdf1.jpg">
+      <publishTime>09/03/2017 19:34:04</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/646.JPG">
+      <publishTime>06/24/2017 21:08:18</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/jy-ptn-yjpzbanner.jpg">
+      <publishTime>09/03/2017 20:17:21</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/M74vh.JPG">
+      <publishTime>06/24/2017 21:08:18</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/MAX.JPG">
+      <publishTime>06/24/2017 21:08:19</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product-mk01.jpg">
+      <publishTime>08/30/2017 23:08:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product-mk02.jpg">
+      <publishTime>08/30/2017 23:08:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product-mk03.jpg">
+      <publishTime>08/30/2017 23:08:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product-mk04.jpg">
+      <publishTime>08/30/2017 23:08:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product-mk05.jpg">
+      <publishTime>08/30/2017 23:08:25</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/product_classr.jpg">
+      <publishTime>08/30/2017 23:02:55</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-xinghao01.gif">
+      <publishTime>09/03/2017 20:17:21</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-xinghao02.gif">
+      <publishTime>09/03/2017 20:17:21</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-xinghao03.gif">
+      <publishTime>09/03/2017 20:17:21</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-yi-arm.gif">
+      <publishTime>06/26/2017 20:51:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-yi-x86.gif">
+      <publishTime>06/26/2017 20:51:58</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-zhong-arm.jpg">
+      <publishTime>09/03/2017 20:19:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-zhong-x86.gif">
+      <publishTime>09/03/2017 20:25:43</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/product/yingjian-zhong-x8602.gif">
+      <publishTime>09/03/2017 20:19:31</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/ZP.jpg">
+      <publishTime>08/30/2017 22:07:53</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/中泰祥和安全云桌面.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云桌面.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云桌面虚拟化网络架构.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/云计算架构下的数字化校园.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/服务器.jpg">
+      <publishTime>06/24/2017 19:11:22</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/机房.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/校园云桌面.jpg">
+      <publishTime>06/26/2017 20:14:40</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/桌面云.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Images/ztxhkj/桌面云数据.jpg">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/20/2017 20:52:16</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/09/2017 11:51:21</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/20/2017 20:52:08</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Scripts/zg69/main.js">
+      <publishTime>09/03/2017 13:08:30</publishTime>
+    </File>
+    <File Include="Scripts/zg69/swiper.jquery.min.js">
+      <publishTime>09/03/2017 20:09:52</publishTime>
+    </File>
+    <File Include="Scripts/zg69/wenziyun.js">
+      <publishTime>06/24/2017 20:02:37</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>08/30/2017 21:59:07</publishTime>
+    </File>
+    <File Include="Views/Home/Anli.cshtml">
+      <publishTime>09/08/2017 23:48:22</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/上海应用技术大学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/上海海事大学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/东北大学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/东华大学旭日工商管理学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/中国矿业大学计算机中心教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/中国计量学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/仙桃市卫计委居民健康卡业务系统虚拟化建设.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/助推泰州市基本公共卫生服务信息系统升级.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/十堰中级人民法院虚拟化平台案例.cshtml">
+      <publishTime>09/08/2017 23:38:29</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/南昌航空大学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/厦门同安区班班通管理分析系统应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/咸丰云教室应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/咸宁公积金业务管理系统虚拟化建设案例.cshtml">
+      <publishTime>09/08/2017 23:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/咸宁国土不动产业务系统建设案例.cshtml">
+      <publishTime>09/08/2017 23:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/四川师范大学.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/天津大学仁爱学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/安吉职教中心教育从桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/安徽城市管理职业学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/安徽省无为县教育局.cshtml">
+      <publishTime>09/08/2017 23:50:19</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/山东青年政治学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/广东工业大学实验教学部桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/广州航海学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/张居正小学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/恩施州警务综合应用系统升级与虚拟化改造案例.cshtml">
+      <publishTime>09/08/2017 23:40:40</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/恩施班班通管理分析系统应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/桂林市班班通管理分析系统应用案例.cshtml">
+      <publishTime>09/08/2017 23:50:19</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/武汉大学计算机学院软件开发实验室教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/武汉市蔡甸区新农中学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/江汉中级人民法院虚拟化平台案例.cshtml">
+      <publishTime>09/06/2017 22:44:47</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/江苏省姜堰二中教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/洪湖市中医院服务器虚拟化案例.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/浙江省德清县教育局.cshtml">
+      <publishTime>09/08/2017 23:50:19</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/海南大学大学图书馆桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北孝感中级人民法院虚拟化平台建设案例.cshtml">
+      <publishTime>09/08/2017 23:38:33</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北应城居民健康卡虚拟化支撑平台案例.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北江陵卫计委虚拟化平台建设.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北省公安厅公安云案例.cshtml">
+      <publishTime>09/08/2017 23:40:40</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北省孝感市卫生局云数据中心案例.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北省荆门卫计委数据中心虚拟化改造.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北省荆门市沙洋县卫计局居民健康卡云数据中心改造.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北荆州卫计委云数据中心案例.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖北荆州社保虚拟化数据中心建设案例.cshtml">
+      <publishTime>09/08/2017 23:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/湖南大学工训中心教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/甘肃张掖市高台县第三中学云教室应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/荆州市沙市区卫计局数据中心虚拟化改造.cshtml">
+      <publishTime>09/08/2017 23:39:59</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/荆门中级人民法院虚拟化平台案例.cshtml">
+      <publishTime>09/08/2017 23:38:29</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/襄阳四中教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/襄阳班班通管理分析系统应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/西华大学.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/郑州科技学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/鄂州警务综合应用系统升级与虚拟化改造案例.cshtml">
+      <publishTime>09/08/2017 23:40:40</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/重庆市班班通管理分析系统应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/陕西国际商贸学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/陕西扶风三小云教室应用案例.cshtml">
+      <publishTime>09/08/2017 23:48:25</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/随州中级人民法院虚拟化平台案例.cshtml">
+      <publishTime>09/08/2017 23:38:29</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/随州市公安云平台建设案例.cshtml">
+      <publishTime>09/08/2017 23:40:40</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/黄冈国土“原有业务”和“不动产业务”完美切换至云端.cshtml">
+      <publishTime>09/08/2017 23:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/黄石劳动就业管理局公共就业服务平台建设案例.cshtml">
+      <publishTime>09/08/2017 23:41:37</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/黑龙江东方学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/黑龙江大学教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/AnLiDetail/黑龙江民族职业技术学院教育桌面云应用案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/AL图书馆.cshtml">
+      <publishTime>09/07/2017 23:28:07</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/AL多媒体教室.cshtml">
+      <publishTime>09/07/2017 23:30:34</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/主页.cshtml">
+      <publishTime>09/06/2017 20:35:45</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/产品介绍.cshtml">
+      <publishTime>09/06/2017 21:09:14</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/公共机房类.cshtml">
+      <publishTime>09/07/2017 23:30:34</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/关键参数.cshtml">
+      <publishTime>09/05/2017 21:51:27</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/典型案例.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/图书馆.cshtml">
+      <publishTime>09/05/2017 22:25:27</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/多媒体教室.cshtml">
+      <publishTime>09/05/2017 21:51:27</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/实验室.cshtml">
+      <publishTime>09/05/2017 22:26:41</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/帮助.cshtml">
+      <publishTime>09/06/2017 20:21:37</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/教师办公.cshtml">
+      <publishTime>09/05/2017 21:51:27</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/方案优势.cshtml">
+      <publishTime>09/06/2017 20:21:37</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/混合应用.cshtml">
+      <publishTime>09/07/2017 23:30:34</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/硬件配置.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/经管院实验室.cshtml">
+      <publishTime>09/07/2017 23:30:34</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/解决方案.cshtml">
+      <publishTime>09/05/2017 21:51:27</publishTime>
+    </File>
+    <File Include="Views/Home/CloudService/计算机学院类实验室.cshtml">
+      <publishTime>09/07/2017 23:30:34</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>08/30/2017 22:14:57</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/08/2017 23:34:13</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyBI.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyCloud.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyCloudClass.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyETL.cshtml">
+      <publishTime>09/07/2017 22:36:41</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyEVDI.cshtml">
+      <publishTime>09/08/2017 23:19:26</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyvBackup.cshtml">
+      <publishTime>09/01/2017 23:27:16</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyvPC.cshtml">
+      <publishTime>09/01/2017 23:27:16</publishTime>
+    </File>
+    <File Include="Views/Home/OSEasyvServer.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/Product.cshtml">
+      <publishTime>09/03/2017 19:03:13</publishTime>
+    </File>
+    <File Include="Views/Home/SearchAnLi.cshtml">
+      <publishTime>09/07/2017 23:00:18</publishTime>
+    </File>
+    <File Include="Views/Home/wenziyun.cshtml">
+      <publishTime>09/06/2017 21:05:01</publishTime>
+    </File>
+    <File Include="Views/Home/ZhaoPin.cshtml">
+      <publishTime>08/30/2017 22:11:08</publishTime>
+    </File>
+    <File Include="Views/Home/公安.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Home/医疗卫生.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Home/噢易BOSS系统.cshtml">
+      <publishTime>09/03/2017 19:28:03</publishTime>
+    </File>
+    <File Include="Views/Home/噢易Mac机房管理系统.cshtml">
+      <publishTime>09/01/2017 23:27:16</publishTime>
+    </File>
+    <File Include="Views/Home/噢易OSS系统.cshtml">
+      <publishTime>09/03/2017 19:15:47</publishTime>
+    </File>
+    <File Include="Views/Home/噢易云一体机%28X86ARM%29.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/噢易云服务器.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/噢易云终端%28X86ARM%29.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/噢易多媒体网络教室软件.cshtml">
+      <publishTime>09/03/2017 19:50:07</publishTime>
+    </File>
+    <File Include="Views/Home/噢易桌面云运维管理系统.cshtml">
+      <publishTime>09/03/2017 19:29:55</publishTime>
+    </File>
+    <File Include="Views/Home/噢易班班通管理分析系统.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/开创啦.cshtml">
+      <publishTime>09/08/2017 23:19:27</publishTime>
+    </File>
+    <File Include="Views/Home/普教.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Home/更多行业.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Home/法院.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Home/高教.cshtml">
+      <publishTime>09/08/2017 23:48:23</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Views/Shared/_CloudServiceLayout.cshtml">
+      <publishTime>09/07/2017 22:36:41</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/07/2017 22:36:41</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>06/20/2017 20:52:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/09/2017 11:51:17</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

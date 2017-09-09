@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "公司产品";
+    ViewBag.Message = "电子元器件列表：";
+}
+<style>
+    #list ul {
+        list-style: none;
+        width: 228px;
+    }
+
+    body {
+        background-image: url(../Images/ztxhkj/bg.jpg);
+    }
+        #list ul li {
+            display: block;
+            padding: 5px;
+            text-align: left;
+        }
+    #list ul li span{
+       color:white;
+    }
+    h3 {
+        color: white;margin-top:0px;
+    }
+    #product ul li > div {
+        border: 1px dotted #d0cdcd;
+    }
+     img {
+        max-height: 216px;
+    }
+    .oe-product-hexinjs .oe-box-item {
+        text-align: center;
+        box-shadow: 0 0 20px rgba(197, 197, 197, .5);
+        height:100px;
+        margin-bottom: 3px;
+        padding-top: 10px;
+        max-width: 280px;
+        border-radius: 8px;
+    }
+    .oe-product-hexinjs span {
+        color: #f5662c !important;
+    }
+    .oe-product-market span {
+        color: #f5662c;
+    }
+    .oe-product-market .oe-box-item {
+        flex-grow: 1;
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .oe-product-market .oe-box-container {
+        display: flex;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+    .oe-product-classr {
+        background: url(../Images/ztxhkj/product/product_classr.jpg) no-repeat center bottom;
+        height: 490px;
+        margin-bottom: 75px;
+        padding-top: 25px;
+    }
+
+</style>
+<h2>&nbsp;</h2>
+<div id="list" style="float:left; width: 228px;" >
+    <ul class="" style=" list-style-type:none;width:100%;font-size:14px;">
+        <li>
+            <span style="font-size:16px">私有云服务</span>
+            <ul class="" >
+                <li>@Html.ActionLink("OS-Easy Cloud", "Product", new { id = "OSEasyCloud" })</li>
+                <li>@Html.ActionLink("OS-Easy vServer", "Product", new { id = "OSEasyvServer" })</li>
+                <li>@Html.ActionLink("OS-Easy vBackup", "Product", new { id = "OSEasyvBackup" })</li>
+              </ul>
+        </li>
+        <li >
+            <span style="font-size:16px">创新创业云服务</span>
+            <ul class="" >
+                <li>@Html.ActionLink("开创啦", "Product", new { id = "开创啦" })</li>
+            </ul>
+        </li>
+        <li >
+            <span style="font-size:16px">桌面云服务</span>
+            <ul class="" style="">
+                <li>@Html.ActionLink("OS-Easy E-VDI", "Product", new { id = "OSEasyEVDI" })</li>
+                <li>@Html.ActionLink("OS-Easy Cloud Class", "Product", new { id = "OSEasyCloudClass" })</li>
+                <li>@Html.ActionLink("OS-Easy vPC", "Product", new { id = "OSEasyvPC" })</li>
+                <li>@Html.ActionLink("噢易云服务器", "Product", new { id = "噢易云服务器" })</li>
+                <li>@Html.ActionLink("噢易云终端(X86/ARM)", "Product", new { id = "噢易云终端(X86ARM)" })</li>
+                <li>@Html.ActionLink("噢易云一体机(X86/ARM)", "Product", new { id = "噢易云一体机(X86ARM)" })</li>
+         </ul>
+        </li>
+        <li>
+            <span style="font-size:16px">大数据服务</span>
+            <ul class="" style="">
+                <li>@Html.ActionLink("OS-Easy BI", "Product", new { id = "OSEasyBI" })</li>
+                <li>@Html.ActionLink("OS-Easy ETL", "Product", new { id = "OSEasyETL" })</li>
+            </ul>
+        </li>
+        <li>
+            <span style="font-size:16px">运维管理</span>
+            <ul class="" style="">
+                <li>@Html.ActionLink("噢易Mac机房管理系统", "Product", new { id = "噢易Mac机房管理系统" })</li>
+                <li>@Html.ActionLink("噢易OSS系统", "Product", new { id = "噢易OSS系统" })</li>
+                <li>@Html.ActionLink("噢易BOSS系统", "Product", new { id = "噢易BOSS系统" })</li>
+                <li>@Html.ActionLink("噢易桌面云运维管理系统", "Product", new { id = "噢易桌面云运维管理系统" })</li>
+                <li>@Html.ActionLink("噢易多媒体网络教室软件", "Product", new { id = "噢易多媒体网络教室软件" })</li>
+                <li>@Html.ActionLink("噢易班班通管理分析系统", "Product", new { id = "噢易班班通管理分析系统" })</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="product" style="float:right;width:76%;background-color:#ffffff;opacity:0.7">
+    @*<h3>@ViewBag.Message</h3>*@
+        <div class="container oe-product-hexinjs"> <div class="row"> <div class="col-md-12"><h1>核心技术</h1></div> <div class="col-md-2 col-sm-2 col-xs-2"></div> <div class="col-md-8 col-sm-8 col-xs-8"> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: 0px 10px;"></i> <p>拥有云计算IAAS层</p> <span>全系列软件产品</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -60px 10px;"></i> <p>自主研发专利技术</p> <span>200+</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: 0px -43px;"></i> <p>已实施云计算项目</p> <span>500+</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -10px -98px;"></i> <p>OpenStack私有云定制化</p> <span>万级用户、三级架构</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -5px -145px;"></i> <p>国内最早研究服务器虚拟化产品</p> <span>6years市场验证</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -66px -46px;"></i> <p>虚拟化平台业务迁移</p> <span>4000+应用</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -71px -93px;"></i> <p>无故障运行时间</p> <span>26280+小时</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: -65px -145px;"></i> <p>通过工信部云计算标准测试</p> <span>参与云测评标准定制</span> </div> </div> <div class="col-md-4 col-sm-6 col-xs-6"> <div class="oe-box-item"> <i style="background-position: 0px -193px;"></i> <p>苹果机房运维管理系统</p> <span>全球第一款mac OS同传</span> </div> </div> </div> <div class="col-md-2 col-sm-2 col-xs-2"></div> </div> </div>
+    <div class="oe-product-market"> <div class="container"> <div class="row"> <div class="col-md-12"><h1>市场</h1></div> <div class="col-md-1 col-sm-1 col-xs-12"></div> <div class="col-md-10 col-sm-10 col-xs-12"> <div class="oe-box-container" style="display: flex;"> <div class="oe-box-item"> <img src="../Images/ztxhkj/product/product-mk01.jpg"> <p>全国市场覆盖</p> <span>23个办事处、2个分公司</span> </div> <div class="oe-box-item"> <img src="../Images/ztxhkj/product/product-mk02.jpg"> <p>全球20个国家代理</p> <span>2016年大力拓展海外云计算市场</span> </div> <div class="oe-box-item"> <img src="../Images/ztxhkj/product/product-mk03.jpg"> <p>累计服务客户</p> <span>500万+</span> </div> <div class="oe-box-item"> <img src="../Images/ztxhkj/product/product-mk04.jpg"> <p>台湾高教市场占有率</p> <span>50%+</span> </div> <div class="oe-box-item"> <img src="../Images/ztxhkj/product/product-mk05.jpg"> <p>国内高教市场占有率</p> <span>47%+</span> </div> </div> </div> <div class="col-md-1 col-sm-1 col-xs-12"></div> </div> </div> </div>
+    <div class="oe-product-classr"> <div class="container"> <div class="row"> <div class="col-md-12"><h1>教育</h1></div> </div> </div> </div>
+</div>
+<div class="clearfix"></div>

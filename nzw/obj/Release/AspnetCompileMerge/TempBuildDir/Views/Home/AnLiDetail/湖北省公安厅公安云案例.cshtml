@@ -1,0 +1,193 @@
+﻿@{ 
+    ViewBag.Title = "湖北省公安厅公安云案例";
+}
+@Styles.Render("~/content/product.css")
+<div class="oe-case-detail">
+    <!--banner区域--> <!--banner区域--> <div class="oe-banner-area-style05 swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide oe-banner-item" style="background-image: url('../../Images/ztxhkj/AnLiDetail/57b2b98c5e4b2.jpg')"></div> </div> <div class="swiper-pagination"></div> </div> <div class="container">
+        <div class="row oe-margin-bottom-30 oe-margin-top-30">
+            <div class="col-md-9 oe-content">
+                <h1>湖北省公安厅公安云案例<br><small> &nbsp;&nbsp;&nbsp;&nbsp;日期：2016-07-28</small></h1> <div class="oe-content-style01">
+                    <div class="oe-box-item">
+                        <h2>
+                            项目背景
+                        </h2> <p>
+                            2015年，公安部发布《公安部关于大力推进基础信息化建设的意见》（公通字〔2015〕18号），要求：部、省两级公安机关信息中心要抓紧建设具有大数据处理能力的公安云计算设施。稳步推进云计算、大数据、物联网等新技术的应用，建设功能完备、灵活扩展、高效智能、安全可靠的省级公安云计算中心，构建覆盖全省（自治区、直辖市）的公安云基础运行环境，为大数据应用提供强大的运算、存储、弹性扩展能力，为省级及以下公安机关信息化应用提供按需定制的云基础资源服务，提高数据处理能力，全面提升公安信息化基础保障水平和化支撑能力。
+                            目前，湖北省公安厅正在积极筹备"公安十三五规划”相关工作，规划涉及到未来五年公安基础信息化的建设方向和建设内容，同时，为了响应公安部号召，公安云基础环境建设将作为湖北省公安“十三五规划”的重点建设内容之一，在全省范围内进行推广和建设。
+                        </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            用户需求
+                        </h2> <p>
+                            构建以湖北省省公安厅为核心、各地市局为节点的省市一体化“公安云”基础支撑平台，为后期实现部、省、市三级公安基础信息化体系一体化的建设发展目标贡献力量。初步建设构想如下：
+                        </p> <ul class=" list-paddingleft-2" style="list-style-type: disc;"> <li> <p> <span style="color: rgb(222, 59, 10);"><strong>促进集约化建设、资源互联互通</strong></span> </p> </li> </ul> <p>
+                            省公安厅制定“省市一体化大云平台”的建设标准规范和对接要求，并负责对各地市公安云平台建设工作的验收；而各地市公安按照省厅指导要求，构建各区域基础虚拟化资源，并通过Openstack区域部署的方式接入省厅，从根本上实现了省市基础资源的虚拟化整合和互联互通的需求；同时，通过把IT基础资源池化机制，以细粒度管理方式充分利用资源，从而大幅提升了基础资源利用率。
+                        </p> <p> <br> </p> <ul class=" list-paddingleft-2" style="list-style-type: disc;"> <li> <p> <span style="color: rgb(222, 59, 10);"><strong>集中调度管理和资源按需申请</strong></span> </p> </li> </ul><span style="color: rgb(222, 59, 10);"></span> <p>
+                            整个省市两级一体化云平台采用集中管理和调度的方式，省厅作为总指挥管理调度中心，可以向各地市云平台发送调度指令，并让其执行；同时可以直接查询并统计各地市数据中心运行状态、资源使用情况和调度情况等；为省厅管理决策提供数据支撑。
+                        </p> <p>
+                            当省厅公安云的资源不够时，可以临时调用某地市的空闲资源，作为测试、备份等场景；当某个地市的计算资源不足时，可以向省厅资源管理调度中心提交申请，然后根据需求分配省厅或其他地市的资源，从而减轻省厅工作负担，提升地市工作效率。
+                        </p> <p> <br> </p> <ul class=" list-paddingleft-2" style="list-style-type: disc;"> <li> <p> <span style="color: rgb(222, 59, 10);"><strong>接管各地市区域的虚拟化资源</strong></span> </p> </li> </ul> <p>
+                            根据省厅制定的云平台指导要求和AIP接口，各地市区域虚拟化资源必须通过Openstack区域部署的方式接入省厅，进行集中监控、管理和合理调度，实现省市一体化平台。
+                        </p> <p>
+                            &nbsp;
+                        </p> <ul class=" list-paddingleft-2" style="list-style-type: disc;"> <li> <p> <span style="color: rgb(222, 59, 10);"><strong>公安云管理平台权限划分和角色管理</strong></span> </p> </li> </ul> <p>
+                            提供统一的公安云WEB门户，包括管理门户和用户门户；采用多级角色管理和权限划分模式，其中管理门户是面向超级管理员、系统管理员和运营管理员；用户门户是面向组织用户和个人用户；最大程度符合全省公安云环境下的多组织授权管理和资源分配模式；系统支持VLAN隔离机制以实现多组织、虚拟机之间的数据隔离；对云环境的用户角色和权限具有细颗粒度管控。
+                        </p> <p> <br> </p> <p>
+                            <span class="Apple-tab-span" style="white-space:pre"></span>省厅拥有全省各地市公安云平台最高管理权限，各地市公安及相关部门的资源申请、审批和资源使用、权限管理都受省厅的集中监管和调配，对于各地市的个性化需求可以单独考虑；
+                        </p> <p> <br> </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            解决方案
+                        </h2> <p>
+                            由于湖北省公安厅云平台，未来部署属于超大规模（地理位置和主机数量），各地市的接入环境复杂，总体平台的安全性要求高，横向扩展能力要求强，所以，目前考虑市场上较成熟的基于Openstack环境的多Region部署方案：
+                        </p> <p> <br> </p> <p style="text-align: center;"> <img src="../../Images/ztxhkj/AnLiDetail/57a5719758dff.jpg" title="2016080608gonganting.jpg" alt="2016080608gonganting.jpg"> </p> <p style="text-align: center;">
+                            省市一体化云平台部署架构图
+                        </p> <p> <br> </p> <p>
+                            全省基于Openstack技术架构，部署一套多区域结构的公安云平台，由省厅作为整个云平台的集中资源管理和调度中心，作为核心节点，而各地市作为云资源单元被接入到省市一体化大云平台，从根本上实现省市基础资源的虚拟化整合和互联互通的需求，当前仅考虑省市两级架构；
+                        </p> <p>
+                            同时，整个公安云平台采用集中管理和调度的方式，就是省厅作为总指挥管理调度中心，可以向各地市被接管区域云基础资源发送指令，并让其执行；&nbsp;
+                        </p> <p>
+                            整个省级平台的资源监控统计，可以直接查询并统计各地市数据中心运行状态、资源使用情况和调度情况等；为省厅管理决策提供数据支撑。
+                        </p> <p>
+                            具体实现的功能如下：
+                        </p> <p>
+                            1）需要重新部署省厅Openstack公安云平台环境，把各地市作为多区域云基础资源接入到省公安云平台内；实现分布式部署云资源，在省厅进行集中管理、调度和监控；
+                        </p> <p>
+                            2）省厅可以通过省厅公安云平台，对市局用户进行账户申请和认证、资源申请和审批、授权和分配资源等任务；
+                        </p> <p>
+                            3）市局可以通过省厅公安云平台申请资源，在经过申请和审批后，省厅会根据资源就近原则，将市局当地的云资源进行分配和交付；
+                        </p> <p>
+                            4）市局可以通过省厅公安云平台申请异地资源，当省厅如果资源充足，可以把省厅资源进行临时分配，或调用其他市局资源进行推送；
+                        </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            客户价值
+                        </h2> <ul class=" list-paddingleft-2" style="list-style-type: disc;">
+                            <li>
+                                <p>
+                                    推动了传统数据中心架构向云计算数据中心IT基础架构的演变
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    实现了服务器资源整合，减少服务器数量，提高了IT基础资源利用率
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    实现了数据中心IT基础资源池化和共享化，可按需动态分配和调整资源；
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    实现原有业务系统快速扩容、新建业务系统快速上线；&nbsp;
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    有利于增强原有业务系统运行环境的高可用性和连续性
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    实现资源、业务的集中统一监管，为公安信息化建设提供决策数据支撑
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    各公安警种、部门和民警可按需自助申请云基础资源
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    为公安各科研项目、业务系统测试提供灵活资源申请，实现快速部署
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    为实现省、市一体化公安基础信息化体系一体化的建设发展目标贡献力量
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    为实现全省公安体系大数据应用提供强大的基础支撑能力
+                                </p>
+                            </li>
+                        </ul> <p> <br> </p>
+                    </div>
+                </div>
+            </div> <div class="col-md-3">
+                <div class="panel panel-default oe-case-right-list">
+                    <div class="panel-heading"> <a href="~/home/Anli/公安"><h3>公安 <small>PUBLIC SECURITY</small></h3></a> </div> <div class="panel-body"> <div class="oe-banner-area" style="background-image: url('../../Images/ztxhkj/AnLiDetail/anli-shebao.jpg')"></div> </div> <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/鄂州警务综合应用系统升级与虚拟化改造案例" data-toggle="tooltip" title="鄂州警务综合应用系统升级与虚拟化改造案例">
+                                        鄂州警务综合应用系统升级与虚拟化改造案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/03</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/恩施州警务综合应用系统升级与虚拟化改造案例" data-toggle="tooltip" title="恩施州警务综合应用系统升级与虚拟化改造案例">
+                                        恩施州警务综合应用系统升级与虚拟化改造案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/03</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/随州市公安云平台建设案例" data-toggle="tooltip" title="随州市公安云平台建设案例">
+                                        随州市公安云平台建设案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/03</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/湖北省公安厅公安云案例" data-toggle="tooltip" title="湖北省公安厅公安云案例">
+                                        湖北省公安厅公安云案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <div class="panel panel-default oe-case-right-list-new">
+                    <div class="panel-heading"> <h3>最新案例</h3> </div> <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">1</span> <a href="~/home/AnLiDetail/浙江省德清县教育局">
+                                浙江省德清县教育局
+                            </a><br>
+                            2017/06/30
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span> <a href="~/home/AnLiDetail/安徽省无为县教育局">
+                                安徽省无为县教育局
+                            </a><br>
+                            2017/06/29
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> <a href="~/home/AnLiDetail/西华大学">
+                                西华大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">4</span> <a href="~/home/AnLiDetail/四川师范大学">
+                                四川师范大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">5</span> <a href="~/home/AnLiDetail/广东工业大学实验教学部桌面云应用案例">
+                                广东工业大学实验教学部桌面云应用案例
+                            </a><br>
+                            2016/12/07
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

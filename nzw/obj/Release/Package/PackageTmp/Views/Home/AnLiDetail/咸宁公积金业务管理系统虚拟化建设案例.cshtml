@@ -1,0 +1,184 @@
+﻿@{ 
+    ViewBag.Title = "咸宁公积金业务管理系统虚拟化建设案例";
+}
+@Styles.Render("~/content/product.css")
+<div class="oe-case-detail">
+    <!--banner区域--> <!--banner区域--> <div class="oe-banner-area-style05 swiper-container"> <div class="swiper-wrapper"> <div class="swiper-slide oe-banner-item" style="background-image: url('../../Images/ztxhkj/AnLiDetail/57b2b98c5e4b2.jpg')"></div> </div> <div class="swiper-pagination"></div> </div> <div class="container">
+        <div class="row oe-margin-bottom-30 oe-margin-top-30">
+            <div class="col-md-9 oe-content">
+                <h1>咸宁公积金业务管理系统虚拟化建设案例<br><small> 遵照住建部“住房公积金综合服务平台系统”建设要求，打造一个全国地市级城市住房公积金管理中心最为先进的住房公积金管理系统。&nbsp;&nbsp;&nbsp;&nbsp;日期：2016-08-02</small></h1> <div class="oe-content-style01">
+                    <div class="oe-box-item">
+                        <h2>
+                            项目背景
+                        </h2> <p>
+                            2015年咸宁市住房公积金业务管理信息系统升级工程被纳入住建部“住房公积金综合服务平台系统”建设试点项目，遵照住建部“住房公积金综合服务平台系统”建设要求：“纳入试点的中心要按照国家B类标准计算机机房进行机房建设”遵照此要求需要在业务办理、客户服务和管理运营等各方面进行全新的规划和设计，打造一个全国地市级城市住房公积金管理中心最为先进的住房公积金管理系统。
+                        </p> <p>
+                            紧密围绕公积金行业发展方向，牢牢把握行业监管要求，以践行新理念、创造新价值、提升新能力为主线，以中心业务发展需求为导向，以“互联网+”和“大数据”两个国家战略的思维及技术为抓手，根据中心资源禀赋、业务特色、信息化基础等条件，构建现代化全方位的智慧公积金信息体系，服务经济社会发展新形态。
+                        </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            建设目标
+                        </h2> <p>
+                            根据行业相关要求，结合中心现状，紧密围绕住房公积金事业的重点工作和发展方向，按照“统一决策、统一管理、统一制度、统一核算”的原则，以住房公积金核心业务系统建设为突破，以建设覆盖公积金管理服务体系的信息系统为目标，借助先进适用的信息化手段，建立涵盖业务经办、综合管理、综合服务、业务协同和决策分析的全维度多层次智慧公积金信息体系。
+                        </p> <ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+                            <li>
+                                <p>
+                                    构建高效、安全的信息系统应用支撑平台，实现业务、人群、功能、网络的全覆盖，
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    构建技术领先、运行稳定、安全可靠、管理科学、业务涵盖全面并具有前瞻性的公积金综合业务系统，
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    实现各项业务领域之间、各协作单位之间的信息共享、协同办理和有效衔接，
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    面向中心管理提供规范化、自动化、高效率的业务经办和准确、稳定、快捷的会计核算，提供智能化决策支持和全面的风险防控，
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    构建安全、便捷的综合服务平台，面向公积金客户提供渠道丰富的公积金服务，
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    配套建立统一规范的信息化公众服务体系、风险监管体系和科学有效的决策支持体系，全面提升住房公积金事业经办、服务、协同、管理、决策水平，提高中心政务工作效率，提升行业管理水平。
+                                </p>
+                            </li>
+                        </ol> <p> <br> </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            方案拓扑
+                        </h2> <p style="text-align: center;"> <img src="../../Images/ztxhkj/AnLiDetail/57a056c61b692.png" title="公积金.png" alt="公积金.png"> </p>
+                    </div> <div class="oe-box-item">
+                        <h2>
+                            整体方案
+                        </h2> <ol class=" list-paddingleft-2" style="list-style-type: decimal;">
+                            <li>
+                                <p>
+                                    整体机房网络扩容，解决原有网络设备单点故障的问题，实现链路冗余。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    利用网闸数据交换设备，打通公积金内网、公积金外网、公积金数据交换平台的网络，实现内外网数据交换，解决原有人工拷贝数据造成数据错误、数据丢失等老大难问题。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    核心内网区域新购两台物理服务器做数据库双机RAC部署，独立于虚拟化平台之外，保障数据库系统的业务吞吐和数据存储区域的独享。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    在核心内网区域，利用新购的四台四路服务器部署云计算、虚拟化平台，主要运行核心业务包含本次新建的住房公积金归集提取管理系统、住房公积金贷款管理系统、住房补贴管理系统、金融互联平台、账务核算系统、管理与决策分析系统，并部署高可用、负载均衡、DRS等高级功能，提高业务的连续性、可用性。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    新购一台FC SAN存储系统，构建内网核心虚拟化平台与业务数据存储平台。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    新建DMZ区域，与核心业务内网、互联网项目物理隔离，利用新购两台数据库服务器与原有利旧服务器构建外网业务平台，新建如：外网门户、网上业务大厅、官方微信、官方微博、综合管理系统、12329服务热线平台、12329手机短信服务平台、运行绩效分析等应。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    新购备份一体机系统，构建核心业务区域的数据备份体系，提高数据安全性。
+                                </p>
+                            </li>
+                        </ol> <p> <br> </p>
+                    </div>
+                </div>
+            </div> <div class="col-md-3">
+                <div class="panel panel-default oe-case-right-list">
+                    <div class="panel-heading"> <a href="~/home/Anli/更多行业"><h3>更多行业 <small>OTHERS</small></h3></a> </div> <div class="panel-body"> <div class="oe-banner-area" style="background-image: url('../../Images/ztxhkj/AnLiDetail/anli-guotu.jpg')"></div> </div> <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/黄冈国土“原有业务”和“不动产业务”完美切换至云端" data-toggle="tooltip" title="黄冈国土“原有业务”和“不动产业务”完美切换至云端">
+                                        黄冈国土“原有业务”和“不动产业务”完美切换至云端
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/09/05</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/黄石劳动就业管理局公共就业服务平台建设案例" data-toggle="tooltip" title="黄石劳动就业管理局公共就业服务平台建设案例">
+                                        黄石劳动就业管理局公共就业服务平台建设案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/02</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/咸宁国土不动产业务系统建设案例" data-toggle="tooltip" title="咸宁国土不动产业务系统建设案例">
+                                        咸宁国土不动产业务系统建设案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/02</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/咸宁公积金业务管理系统虚拟化建设案例" data-toggle="tooltip" title="咸宁公积金业务管理系统虚拟化建设案例">
+                                        咸宁公积金业务管理系统虚拟化建设案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/08/02</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="~/home/AnLiDetail/湖北荆州社保虚拟化数据中心建设案例" data-toggle="tooltip" title="湖北荆州社保虚拟化数据中心建设案例">
+                                        湖北荆州社保虚拟化数据中心建设案例
+                                    </a>
+                                </td>
+                                <td class="table-datetime-td-width">2016/07/28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <div class="panel panel-default oe-case-right-list-new">
+                    <div class="panel-heading"> <h3>最新案例</h3> </div> <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">1</span> <a href="~/home/AnLiDetail/浙江省德清县教育局">
+                                浙江省德清县教育局
+                            </a><br>
+                            2017/06/30
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">2</span> <a href="~/home/AnLiDetail/安徽省无为县教育局">
+                                安徽省无为县教育局
+                            </a><br>
+                            2017/06/29
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> <a href="~/home/AnLiDetail/西华大学">
+                                西华大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">4</span> <a href="~/home/AnLiDetail/四川师范大学">
+                                四川师范大学
+                            </a><br>
+                            2017/06/13
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">5</span> <a href="~/home/AnLiDetail/广东工业大学实验教学部桌面云应用案例">
+                                广东工业大学实验教学部桌面云应用案例
+                            </a><br>
+                            2016/12/07
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
