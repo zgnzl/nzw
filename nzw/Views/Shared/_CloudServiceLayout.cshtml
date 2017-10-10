@@ -139,7 +139,7 @@
 
                 </p>
                 <p>
-                    &copy; @DateTime.Now.Year - @ViewBag.CompanyName &nbsp; &nbsp;  京ICP备17056601号 &nbsp;&nbsp;   版权所有
+                    &copy; @DateTime.Now.Year - @ViewBag.CompanyName &nbsp; &nbsp;  京ICP备17056601号 &nbsp;&nbsp; <img src="~/Images/logo/备案图标.png" alt="" style="width:16px;">京公网安备 11011202000895号
                     @*<script type="text/javascript">
                     document.write(unescape(" %3Cscript type='text/javascript' src='http://zg69.cn/statictics/index/testid?title=" + escape(document.title) + "&sourceurl=" + encodeURI(document.location.href) + "'%3E%3C/script%3E"));
                 </script>*@
@@ -149,5 +149,19 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
 </body>
 </html>
