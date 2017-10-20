@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="@ViewBag.KeyWords" />
     <meta name="description" content="@ViewBag.Description" />
-    <title>@(ViewBag.Title + " " + ViewBag.CompanyName)</title>
+    <title>@(ViewBag.Title + " - " + ViewBag.CompanyName)</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 id="CompanyName" style="color:white;font-weight:600;margin-top: 5px;margin-bottom: 5px;"><img style="height:66px;" src="~/Images/logo/logo.png" alt="北京中泰祥和科技有限公司"> </h1>
+                <h1 id="CompanyName" style="color:white;font-weight:600;margin: 5px;"><img style="height:66px;" src="~/Images/logo/logo.png" alt="北京中泰祥和科技有限公司"> </h1>
             </div>
             <div class="navbar-collapse collapse" style="float:right">
                 <ul class="nav navbar-nav">
@@ -35,6 +35,7 @@
                     <li>@Html.ActionLink("关于", "About", "Home")</li>
                     <li>@Html.ActionLink("联系", "Contact", "Home")</li>
                     <li>@Html.ActionLink("招聘", "ZhaoPin", "Home")</li>
+                    <li><a href="http://www.buy.zgztxh.com/">电子器件商城</a></li>
                 </ul>
             </div>
         </div>
@@ -44,23 +45,21 @@
         <hr />
        
     </div>
-    <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:white;padding-left:30%;padding-top:15px">
-        <footer>
+    <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:white;padding-top:15px">
+        <footer style="margin-left: auto;margin-right: auto;margin-left: 5px;text-align: center;">
                 <p>
                     @Html.Raw("@")北京市通州区台湖北里29号楼3层328室
-    @Html.ActionLink("主页", "Index", "Home" ,null,new {@style="margin-left: 50px"})
-    @Html.ActionLink("产品", "Product", "Home",  new { id = "" }, new { @style = "margin-left: 20px" })
-    @Html.ActionLink("案例", "Anli/", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
-    @Html.ActionLink("关于", "About", "Home", null, new { @style = "margin-left: 20px" })
-    @Html.ActionLink("联系", "Contact", "Home",null,new {@style="margin-left: 20px"})
-    @Html.ActionLink("招聘", "ZhaoPin", "Home", null, new { @style = "margin-left: 20px" })
-
+                        @Html.ActionLink("主页", "Index", "Home", null, new { @style = "margin-left: 50px" })
+                        @Html.ActionLink("产品", "Product", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
+                        @Html.ActionLink("案例", "Anli/", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
+                        @Html.ActionLink("关于", "About", "Home", null, new { @style = "margin-left: 20px" })
+                        @Html.ActionLink("联系", "Contact", "Home", null, new { @style = "margin-left: 20px" })
+                        @Html.ActionLink("招聘", "ZhaoPin", "Home", null, new { @style = "margin-left: 20px" })
+                    <a href="http://www.buy.zgztxh.com/" style="margin-left: 20px">电子器件商城</a>
                 </p>
                 <p>
-                    &copy; @DateTime.Now.Year - @ViewBag.CompanyName &nbsp; &nbsp;  京ICP备17056601号 &nbsp;&nbsp;<img src="~/Images/logo/备案图标.png" alt="" style="width:16px;">京公网安备11011202000895号
-                    @*<script type="text/javascript">
-                    document.write(unescape(" %3Cscript type='text/javascript' src='http://zg69.cn/statictics/index/testid?title=" + escape(document.title) + "&sourceurl=" + encodeURI(document.location.href) + "'%3E%3C/script%3E"));
-                </script>*@
+                    &copy; @DateTime.Now.Year -  &nbsp;&nbsp; 北京中泰祥和科技有限公司 &nbsp; &nbsp; 
+                   京ICP备17056601号 &nbsp;&nbsp;    <img src="~/Images/logo/备案图标.png" alt="" style="width:16px;">京公网安备11011202000895号
                 </p>
         </footer>
     </div>
