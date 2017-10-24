@@ -48,7 +48,7 @@ ul, dl { list-style: none; padding: 0; margin: 0; }
 .siSubCon { margin: 18px; padding: 0px; overflow: hidden; color: #575757; text-align: left; text-indent: 20px; line-height: 25px; }
 .pilSubCon { margin: auto 18px 0 18px; padding: 10px 0 0; overflow: hidden; }
 	.pilSubCon ul { width: 100%; list-style-type: none; }
-	.pilSubCon li { width: 25%; height: 200px; text-align: center; float: left; }
+	.pilSubCon li { width: 25%; height: 220px; text-align: center; float: left; }
 	.pilSubCon .img { width: 148px; height: 148px; display: inline-block; margin: 0 auto; border-width: 1px; border-style: solid; border-color: #C0C0C0; overflow: hidden; }
 	.pilSubCon .maxLen { width: 150px; display: inline-block; margin: 0px auto; text-align: center; }
         .pilSubCon .maxLen a {
@@ -240,7 +240,7 @@ span.bds_more, .bds_tools a { line-height: normal; }
 		.piSubCon .info li { padding: 0px 0px 10px 0px; color: #333333; font-size: 12px; height:22px }
 	.piSubCon .intro { margin: 0px 0px 16px 0px; padding: 10px; overflow: hidden; background-color: #F4F4F4; color: #666666; font-size: 12px; line-height: 28px; clear: both; }
 	.piSubCon .detail { margin: 0px 0px 16px 0px; overflow: hidden; font-size: 12px; line-height: 28px; clear: both; }
-.msSubCon { overflow: hidden; text-align: left; clear: both; padding: 10px; border: 0; }
+.msSubCon { overflow: hidden; text-align: left; clear: both; padding: 10px; border: 0; display: none;}
 	.msSubCon .h { width: 100%; height: 45px; margin: 0px 0px 10px 0px; border-width: 0 0 1px 0; border-style: solid; border-color: #D9D9D9; }
 		.msSubCon .h b { width: 70px; height: 45px; display: inline-block; border-width: 0 0 1px 0; border-style: solid; border-color: #353535; font-size: 14px; line-height: 45px; }
 	.msSubCon .item { width: 100%; padding: 5px 0px 5px 0px; overflow: hidden; }

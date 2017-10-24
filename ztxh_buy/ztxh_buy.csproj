@@ -23,6 +23,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +43,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
@@ -58,14 +61,13 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
@@ -88,13 +90,13 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
     </Reference>
@@ -109,6 +111,47 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Product_Information\MSPEXP430G2.cshtml" />
+    <Content Include="Views\Product_Information\MSP430G2553.cshtml" />
+    <Content Include="Views\Product_Information\AD1672AP.cshtml" />
+    <Content Include="Views\Product_Information\开发板OK6410.cshtml" />
+    <Content Include="Views\Product_Information\TektronixMDO3104MDO3SA混合信号示波器.cshtml" />
+    <Content Include="Views\Product_Information\MDO3012混合域示波器.cshtml" />
+    <Content Include="Views\Product_Information\ST-LINKV2仿真器.cshtml" />
+    <Content Include="Views\Product_Information\MDO3000 混合域示波器.cshtml" />
+    <Content Include="Views\Product_Information\开发板FriendlyArmtiny6410.cshtml" />
+    <Content Include="Views\Product_Information\精密电位器500Ω%28501%29.cshtml" />
+    <Content Include="Views\Product_Information\直插排阻220KΩ%28224%295.cshtml" />
+    <Content Include="Views\Product_Information\黑金开发版.cshtml" />
+    <Content Include="Views\News\全国大学生电子设计竞赛.cshtml" />
+    <Content Include="Views\News\变革企业IT市场10大趋势 云计算居首位.cshtml" />
+    <Content Include="Views\News\儒卓力在中国、香港和台湾设立分公司.cshtml" />
+    <Content Include="Views\News\中泰祥和商城.cshtml" />
+    <Content Include="Files\慕尼黑电子展相关资料.pdf" />
+    <Content Include="Files\飞思卡尔半导体--快速变化市场中的汽车微控制器.pdf" />
+    <Content Include="Views\Technology\红外测温仪FLUK的结构与原理.cshtml" />
+    <Content Include="Views\Technology\2015年慕尼黑上海电子展 -TE Connectivity.cshtml" />
+    <Content Include="Views\Technology\仿真器ST-LINK简介.cshtml" />
+    <Content Include="Views\Technology\磁性传感器的未来发展前景.cshtml" />
+    <Content Include="Views\Technology\磁性传感器的介绍.cshtml" />
+    <Content Include="Views\Technology\红外测温仪在设备故障诊断时的使用.cshtml" />
+    <Content Include="Views\Technology\红外测温仪FLUK的原理介绍.cshtml" />
+    <Content Include="Views\Technology\电子元器件的识别%28图%29.cshtml" />
+    <Content Include="Views\Technology\工业4.0与互联网4.0时代IT技术厂商大.cshtml" />
+    <Content Include="Views\Technology\2015慕尼黑上海电子展.cshtml" />
+    <Content Include="Views\Technology\混合域示波器MDO3000仪器分类.cshtml" />
+    <Content Include="Views\Technology\红外测温仪FLUK产品描述.cshtml" />
+    <Content Include="Views\Technology\红外测温仪FLUK的说明.cshtml" />
+    <Content Include="Views\Technology\本安型磁性传感器结构特点.cshtml" />
+    <Content Include="Views\Technology\红外测温仪FLUK正确选择.cshtml" />
+    <Content Include="Views\Technology\磁性传感器的产业应用.cshtml" />
+    <Content Include="Views\Technology\磁性传感器的应用.cshtml" />
+    <Content Include="Views\Technology\如何使用红外测温仪FLUK.cshtml" />
+    <Content Include="Views\Technology\仿真器ST-LINK的基本实现方式.cshtml" />
+    <Content Include="Views\Technology\红外测温仪FLUK的产品特点.cshtml" />
+    <Content Include="Views\Technology\红外测温仪技术参数.cshtml" />
+    <Content Include="Views\Technology\磁性传感器的发展趋势.cshtml" />
+    <Content Include="Views\Technology\磁性传感器在电子罗盘中的应用.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

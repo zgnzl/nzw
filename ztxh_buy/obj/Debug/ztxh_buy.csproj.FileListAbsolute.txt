@@ -56,6 +56,6 @@ E:\TeamFondationServers\nzw\ztxh_buy\bin\zh-Hans\System.Web.Razor.resources.dll
 E:\TeamFondationServers\nzw\ztxh_buy\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\TeamFondationServers\nzw\ztxh_buy\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\TeamFondationServers\nzw\ztxh_buy\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\TeamFondationServers\nzw\ztxh_buy\obj\Debug\ztxh_buy.csprojResolveAssemblyReference.cache
 E:\TeamFondationServers\nzw\ztxh_buy\obj\Debug\ztxh_buy.dll
 E:\TeamFondationServers\nzw\ztxh_buy\obj\Debug\ztxh_buy.pdb
+E:\TeamFondationServers\nzw\ztxh_buy\obj\Debug\ztxh_buy.csprojResolveAssemblyReference.cache

@@ -20,7 +20,24 @@ namespace ztxh_buy.Controllers
             {
                 return RedirectToAction("INDEX");
             }
+            ViewBag.Title = ID;
             return View(ID);
+        }
+
+        public ActionResult ProductInformation(string ID)
+        {
+            ViewBag.Title = ID;
+            return View("~/Views/Product_Information/" + ID+".cshtml");
+        }
+        public ActionResult News(string ID)
+        {
+            ViewBag.Title = ID;
+            return View("~/Views/News/" + ID + ".cshtml");
+        }
+        public ActionResult Technology(string ID)
+        {
+            ViewBag.Title = ID;
+            return View("~/Views/Technology/" + ID + ".cshtml");
         }
     }
 }
