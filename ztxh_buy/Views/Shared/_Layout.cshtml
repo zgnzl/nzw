@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.KeyWords = "电子元器件，元器件采购，电阻，电容，芯片，开发版，仿真器，单孔万能板单面，设备诊断仪器，实验工具及配件";
     ViewBag.Description = "中泰祥和商城成立于2015年1月2日，隶属于北京中泰祥和科技有限公司，是中国首批尝试开发电子元器件小批量采购的垂直电商之一。订购热线：13121882225         010-80741878 ";
-   
+
 }
 <!DOCTYPE html>
 <html>
@@ -13,8 +13,8 @@
     <meta name="description" content="@ViewBag.Description" />
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/old/style_anf.css" type="text/css" rel="stylesheet" />
-    <link href="~/Content/bootstrap.css"  type="text/css" rel="stylesheet" />
-    <link href="~/Content/Site.css"  type="text/css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" type="text/css" rel="stylesheet" />
+    <link href="~/Content/Site.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top" style="border-bottom: 5px solid #890038;background-color:white">
@@ -27,12 +27,12 @@
                 </button>
                 <h1 id="CompanyName" style="color:white;font-weight:600;margin: 5px;"><img style="height:66px;" src="~/Images/logo/logo.png" alt="北京中泰祥和科技有限公司"> </h1>
             </div>
-              <style>
-                  li > a {
-                      color: #890038;
-                      font-size: 18px;
-                  }
-    </style>
+            <style>
+                li > a {
+                    color: #890038;
+                    font-size: 18px;
+                }
+            </style>
             <div class="navbar-collapse collapse" style="float:right;margin-top:20px">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("首页", "Index")</li>
@@ -51,44 +51,31 @@
         @RenderBody()
         <hr />
     </div>
-        <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:darkgray;padding-top:15px;background-color:white">
-            <footer style="margin-left: auto;margin-right: auto;margin-left: 5px;text-align: center;">
-                <p>
-                    Copyright@("@") 2003 -  @DateTime.Now.Year &nbsp;&nbsp; 北京中泰祥和科技有限公司 - 电子元器件市场部 &nbsp; &nbsp; 
-                    京ICP备17056601号 &nbsp;&nbsp;  
-                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202000895" style="color:darkgray;display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                        <img src="~/Images/logo/备案图标.png" style="float:left;" />
-                        京公网安备 11011202000895号
-                    </a>
-                    <br />
-                    订购热线：13121882225 ;  010-80741878  &nbsp;&nbsp; 友情链接：<a style="color:#890038" target="ztxh" href="http://www.zgztxh.com">北京中泰祥和科技有限公司官方网站</a>
-                </p>
-            </footer>
-        </div>
+    <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:darkgray;padding-top:15px;background-color:white">
+        <footer style="margin-left: auto;margin-right: auto;margin-left: 5px;text-align: center;">
+            <p>
+                Copyright@("@") 2003 -  @DateTime.Now.Year &nbsp;&nbsp; 北京中泰祥和科技有限公司 - 电子元器件市场部 &nbsp; &nbsp;
+                京ICP备17056601号 &nbsp;&nbsp;
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202000895" style="color:darkgray;display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                    <img src="~/Images/logo/备案图标.png" style="float:left;" />
+                    京公网安备 11011202000895号
+                </a>
+                <br />
+                订购热线：13121882225 ;  010-80741878  &nbsp;&nbsp; 友情链接：<a style="color:#890038" target="ztxh" href="http://www.zgztxh.com">北京中泰祥和科技有限公司官方网站</a>
+            </p>
+        </footer>
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <script>
-            (function () {
-                var bp = document.createElement('script');
-                var curProtocol = window.location.protocol.split(':')[0];
-                if (curProtocol === 'https') {
-                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                }
-                else {
-                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                }
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(bp, s);
-            })();
-
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?24389dc1d57dc729087274132f6b6470";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?24389dc1d57dc729087274132f6b6470";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 
 </body>
