@@ -160,6 +160,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\active_slider_control.png" />
+    <Content Include="Images\logo\11-11.jpg" />
     <Content Include="Images\logo\bjztxh.png" />
     <Content Include="Images\logo\favicon.ico" />
     <Content Include="Images\logo\logo.png" />

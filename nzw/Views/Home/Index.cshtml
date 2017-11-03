@@ -20,7 +20,19 @@
 </style>
 <script>
     setInterval(function () {
-        $("#banner > div").toggle();
+        $("#banner > div").each(function (i) {
+            if ( !$(this).is(":hidden")) {
+                if (i + 1 < $("#banner > div").length) {
+                    $(this).hide("fast");
+                    $("#banner > div").eq(i + 1).show("fast");
+                    return false;
+                } else
+                {
+                    $(this).hide("fast");
+                    $("#banner > div").eq(0).show("fast"); return false;
+                }
+            }
+        });
     }, 6666);
     function getMore(sid, obj)
     {
@@ -34,12 +46,20 @@
             $(obj).html("收起 &laquo;");
         }
     }
+    setTimeout(function () {
+        $("#guanggao").animate({ height: "0px" }, "slow", function () {
+    $("#guanggao img").css("height", "100px"); $("#guanggao").css("left", "0px").css("position", "fixed").css("top", "40%"); 
+        });
+    }, 5668);
 </script>
 @*<div class="jumbotron" >
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>*@
+<div id="guanggao" style="z-index:1000;width:100%">
+    <a target="buy_ztxh" href="http://www.buy.zgztxh.com/"> <img src="~/Images/logo/11-11.jpg" /></a>
+</div>
 <div id="banner" style="padding-top:61px;text-align:center;">
     <div style="display:none">
         <img src="~/Images/ztxhkj/oseasy.png" />
@@ -47,9 +67,7 @@
     <div>
         <img src="~/Images/ztxhkj/中泰祥和安全云桌面.jpg" />
     </div>
-   
 </div>
-
 <style>
     ul li a {
         color: #333333;
