@@ -17,7 +17,7 @@
         if ($("#case_query").val() == "" || $("#case_query").val() == "请输入案例名称") {
             alert("请输入案例名称");
         } else {
-            window.location.href = "@Request.ApplicationPath.Trim('/')" + "/Home/SearchAnLi/?keyword=" + $("#case_query").val();
+           window.location.href =  "../SearchAnLi/?keyword=" + $("#case_query").val();
         }
     };
 </script>

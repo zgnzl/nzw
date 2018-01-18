@@ -79,18 +79,13 @@ namespace nzw.Controllers
         }
         public List<string> GetAnLiDetailList()
         {
-            List<string> listanli = caching.Get("listanli") as List<string>;
-            if (listanli == null)
-            {
-                listanli = new List<string>();
+            List<string> listanli = new List<string>();
                 string path = Server.MapPath("~/views/Home/anlidetail");
                 DirectoryInfo dir = new DirectoryInfo(path);
                 foreach (FileInfo fileinfo in dir.GetFiles())
                 {
                     listanli.Add(fileinfo.Name.Replace(".cshtml", ""));
                 }
-                caching.Add("listanli", listanli, null, Cache.NoAbsoluteExpiration, TimeSpan.FromDays(30), CacheItemPriority.AboveNormal, null);
-            }
             return listanli;
         }
     }
