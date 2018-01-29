@@ -49,7 +49,7 @@
     <div class="navbar-inverse navbar-header" style="min-height:50px;width:100%;color:white;padding-top:15px">
         <footer style="margin-left: auto;margin-right: auto;margin-left: 5px;text-align: center;">
             <p>
-                @Html.Raw("@")北京市通州区台湖北里29号楼3层328室
+                北京市通州区台湖北里29号楼3层328室
                 @Html.ActionLink("主页", "Index", "Home", null, new { @style = "margin-left: 50px" })
                 @Html.ActionLink("产品", "Product", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
                 @Html.ActionLink("案例", "Anli/", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
@@ -59,7 +59,7 @@
                 <a href="http://www.buy.zgztxh.com/" target="ztxh_buy" style="margin-left: 20px">电子器件商城</a>
             </p>
             <p>
-                &copy; @DateTime.Now.Year -  &nbsp;&nbsp; 北京中泰祥和科技有限公司 &nbsp; &nbsp;
+                Copyright@("@") 2003 -  @DateTime.Now.Year   &nbsp;&nbsp;&reg; 北京中泰祥和科技有限公司 &nbsp; &nbsp;
                 京ICP备17056601号 &nbsp;&nbsp;
                 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202000895" style="color:white;display:inline-block;text-decoration:none;height:20px;line-height:20px;">
                     <img src="~/Images/logo/备案图标.png" style="float:left;" />
