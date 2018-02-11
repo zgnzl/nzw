@@ -1,17 +1,20 @@
 ﻿@{
     ViewBag.Message = "联系方式";
+    ViewBag.KeyWords = "电子元器件，元器件采购，电阻，电容，芯片，开发版，仿真器，单孔万能板单面，设备诊断仪器，实验工具及配件";
+    ViewBag.Description = "中泰祥和商城成立于2015年1月2日，隶属于北京中泰祥和科技有限公司，是中国首批尝试开发电子元器件小批量采购的垂直电商之一。订购热线：13121882225         010-80741878 ";
+
 }
 <h2> &nbsp;</h2>
 <style>
     address {
-    font-size:16px;
-    text-align:left;
-    margin-left:30px;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 30px;
     }
 </style>
 <address>
     地址：北京市通州区台湖北里29号楼3层328室。<br />
-     Q Q ： 350692542<br />
+    Q Q ： 350692542<br />
     座机：010-59432225<br />
     电话：15801473663<br />
 </address>
@@ -41,109 +44,113 @@
 @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=BPPrdn0rN6iz2l1o97PohYt2Q7aOT9lW"></script>
 <script type="text/javascript">
-function initBaiduMap(){
-	var mapZoom 	= 17 ,
-		winInfo = "北京中泰祥和科技有限公司" ,//输入的内容作为JS的字符串需要调用这个方法 by jser
-		mapX 		= 116.64905 ,
-		mapY        = 39.843569 ,
-		overlayX    = 116.64905 ,
-		overlayY    = 39.843569 ;
+    function initBaiduMap() {
+        var mapZoom = 17,
+            winInfo = "北京中泰祥和科技有限公司",//输入的内容作为JS的字符串需要调用这个方法 by jser
+            mapX = 116.64905,
+            mapY = 39.843569,
+            overlayX = 116.64905,
+            overlayY = 39.843569;
 
-	var map = new BMap.Map("mapContainer310"); // map实例
-	var point = new BMap.Point( mapX, mapY); 			 // 坐标点
-	map.centerAndZoom( point, mapZoom );
+        var map = new BMap.Map("mapContainer310"); // map实例
+        var point = new BMap.Point(mapX, mapY); 			 // 坐标点
+        map.centerAndZoom(point, mapZoom);
 
-	var oPoint = new BMap.Point(overlayX ,  overlayY );
-	var marker = new BMap.Marker(oPoint);
+        var oPoint = new BMap.Point(overlayX, overlayY);
+        var marker = new BMap.Marker(oPoint);
 
-	map.enableScrollWheelZoom();				// 启用滚轮放大缩小
-	map.disableDoubleClickZoom();				// 禁止双击放大
-	map.addOverlay(marker);						// 添加一个小圆点
-	//marker.enableDragging(true);				// 设置标注可拖拽
-	var bMapNavigation = new BMap.NavigationControl();
-	map.addControl( bMapNavigation );										// 添加一条鱼骨
+        map.enableScrollWheelZoom();				// 启用滚轮放大缩小
+        map.disableDoubleClickZoom();				// 禁止双击放大
+        map.addOverlay(marker);						// 添加一个小圆点
+        //marker.enableDragging(true);				// 设置标注可拖拽
+        var bMapNavigation = new BMap.NavigationControl();
+        map.addControl(bMapNavigation);										// 添加一条鱼骨
 
-	initInfoWindow(marker, winInfo);//添加信息窗
+        initInfoWindow(marker, winInfo);//添加信息窗
 
-	function initInfoWindow(mMarker, infomation){
-		if(!infomation){ return }
-		//设置为0可以高度自适应
-		var infoWindow = new BMap.InfoWindow( addScrollWrap( infomation ) , { width:236, height:0, title:'', enableAutoPan: false });						// 创建信息窗口对象
-		mMarker.openInfoWindow(infoWindow);
-		mMarker.addEventListener('click', function(e) {
-			if( infoWindow.isOpen() ){
-				this.closeInfoWindow();
-			} else {
-				this.openInfoWindow(infoWindow);
-			}
-		});
-	}
-}
-function addScrollWrap(info){//2.0的信息弹窗不支持滚动条，手工包装一个可以带滚动条的容器 by jser
+        function initInfoWindow(mMarker, infomation) {
+            if (!infomation) { return }
+            //设置为0可以高度自适应
+            var infoWindow = new BMap.InfoWindow(addScrollWrap(infomation), { width: 236, height: 0, title: '', enableAutoPan: false });						// 创建信息窗口对象
+            mMarker.openInfoWindow(infoWindow);
+            mMarker.addEventListener('click', function (e) {
+                if (infoWindow.isOpen()) {
+                    this.closeInfoWindow();
+                } else {
+                    this.openInfoWindow(infoWindow);
+                }
+            });
+        }
+    }
+    function addScrollWrap(info) {//2.0的信息弹窗不支持滚动条，手工包装一个可以带滚动条的容器 by jser
 
-	if(info){
-		info =  ('<div style="word-wrap:break-word;padding:0 7px;">'+ info +'</div>');
-	}
+        if (info) {
+            info = ('<div style="word-wrap:break-word;padding:0 7px;">' + info + '</div>');
+        }
 
-	return info;
-}
-function initGoogleMap(){
-	//获取承载谷歌地图的容器
-	var container = document.getElementById('mapContainer310');
-	var myLatLng = new google.maps.LatLng( 113.33254255767213,23.133158856784426);
-	var myOverLatLng = new google.maps.LatLng( 113.33254255767213,23.133158856784426);
-	//创建谷歌地图
-	var googleMap = new google.maps.Map(container,
-					{draggable : true,
-					scrollwheel : false,
-					zoom : 16,
-					streetViewControl: false,
-					center:myOverLatLng,
-					scaleControl: true,
-					mapTypeId : google.maps.MapTypeId.ROADMAP});
-	//创建标记
-	marker = new google.maps.Marker({map : googleMap,position:myLatLng,animation: google.maps.Animation.DROP,
-										draggable : true});
-	marker.setMap(googleMap);
-	var infoWin = new google.maps.InfoWindow({content:"北京中泰祥和科技有限公司",width:"auto",height:"auto"});
-	infoWin.open(googleMap,marker);
-}
-function loadMapError(){
-	var mapContainer = $('#mapContainer310');
-	mapContainer.css({ color: 'red', position: 'relative', textAlign: 'center' });
-	var msg = $('<div>').css({ position: 'absolute', top:'50%', width:'100%' }).text('加载地图失败，请刷新重试');
-	mapContainer.append( msg );
-}
-$(function(){
-	var hasCatchExp = false,
-		mapType     = 1,
-		useGoogle   = (mapType == 2),
-		useBaidu    = (mapType == 1);
+        return info;
+    }
+    function initGoogleMap() {
+        //获取承载谷歌地图的容器
+        var container = document.getElementById('mapContainer310');
+        var myLatLng = new google.maps.LatLng(113.33254255767213, 23.133158856784426);
+        var myOverLatLng = new google.maps.LatLng(113.33254255767213, 23.133158856784426);
+        //创建谷歌地图
+        var googleMap = new google.maps.Map(container,
+            {
+                draggable: true,
+                scrollwheel: false,
+                zoom: 16,
+                streetViewControl: false,
+                center: myOverLatLng,
+                scaleControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+        //创建标记
+        marker = new google.maps.Marker({
+            map: googleMap, position: myLatLng, animation: google.maps.Animation.DROP,
+            draggable: true
+        });
+        marker.setMap(googleMap);
+        var infoWin = new google.maps.InfoWindow({ content: "北京中泰祥和科技有限公司", width: "auto", height: "auto" });
+        infoWin.open(googleMap, marker);
+    }
+    function loadMapError() {
+        var mapContainer = $('#mapContainer310');
+        mapContainer.css({ color: 'red', position: 'relative', textAlign: 'center' });
+        var msg = $('<div>').css({ position: 'absolute', top: '50%', width: '100%' }).text('加载地图失败，请刷新重试');
+        mapContainer.append(msg);
+    }
+    $(function () {
+        var hasCatchExp = false,
+            mapType = 1,
+            useGoogle = (mapType == 2),
+            useBaidu = (mapType == 1);
 
-	if (hasCatchExp) {
-		Fai.ing("当前设置的坐标数据有问题，为保证百度API正常使用，现已重置为默认坐标。请您联系客服处理。", true);
-	}
+        if (hasCatchExp) {
+            Fai.ing("当前设置的坐标数据有问题，为保证百度API正常使用，现已重置为默认坐标。请您联系客服处理。", true);
+        }
 
-	if(useBaidu){
-		if( typeof BMap == 'undefined' ){
-			loadMapError();
-		}else{
-			initBaiduMap();
-		}
-	}
+        if (useBaidu) {
+            if (typeof BMap == 'undefined') {
+                loadMapError();
+            } else {
+                initBaiduMap();
+            }
+        }
 
-	if(useGoogle){
-		var G = window.google,
-			googleExist = !!( G && G.maps && G.maps.Map );//转boolean值，否则会在google下会拿到一个obj by jser 2017-9-11
+        if (useGoogle) {
+            var G = window.google,
+                googleExist = !!(G && G.maps && G.maps.Map);//转boolean值，否则会在google下会拿到一个obj by jser 2017-9-11
 
-		if( !googleExist ){
-			loadMapError();
-		}else{
-			initGoogleMap();
-		}
-	}
+            if (!googleExist) {
+                loadMapError();
+            } else {
+                initGoogleMap();
+            }
+        }
 
-});
+    });
 </script>
 
 <div id="mapContainer310" style="height:300px; width:750px;"></div>
