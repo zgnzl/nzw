@@ -143,6 +143,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -689,6 +690,7 @@
     <Content Include="Views\Home\AnLiDetail\山东青年政治学院教育桌面云应用案例.cshtml" />
     <Content Include="Views\Home\AnLiDetail\湖南大学工训中心教育桌面云应用案例.cshtml" />
     <Content Include="Views\Home\SearchAnLi.cshtml" />
+    <Content Include="Views\Search\Pub.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

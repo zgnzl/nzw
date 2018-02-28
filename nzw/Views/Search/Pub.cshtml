@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+    string url = ViewBag.url;
+}
+@if (string.IsNullOrEmpty(url))
+{
+    <div style="text-align:center;padding-top:10%;">
+        <img src="~/Images/logo/bjztxh.png" style="height:110px" />
+        <form method="get" action="">
+            <input style="width: 480px!important;height:50px" name="url" type="url" />
+            <input style="height:50px" type="submit" value="由中泰祥和进入" />
+        </form>
+    </div>
+}
+else
+{
+    <iframe style="width:99%;height:99%" src="@url"></iframe>
+}

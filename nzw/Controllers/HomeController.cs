@@ -88,5 +88,11 @@ namespace nzw.Controllers
                 }
             return listanli;
         }
+
+        public ActionResult Search(string text)
+        {
+            ViewBag.text = text;
+            return View();
+        }
     }
 }
