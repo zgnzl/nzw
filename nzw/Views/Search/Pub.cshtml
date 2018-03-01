@@ -5,14 +5,14 @@
 @if (string.IsNullOrEmpty(url))
 {
     <div style="text-align:center;padding-top:10%;">
-        <img src="~/Images/logo/bjztxh.png" style="height:110px" />
+        <img src="~/Images/logo/zgztxh_small.png" style="height:110px" />
         <form method="get" action="">
-            <input style="width: 480px!important;height:50px" name="url" type="url" />
+            <input style="width: 480px!important;height:50px" placeholder="请输入完整URL：http or https" name="url" type="url" />
             <input style="height:50px" type="submit" value="由中泰祥和进入" />
         </form>
     </div>
 }
 else
 {
-    <iframe style="width:99%;height:99%" src="@url"></iframe>
+    <div style="width:100%;height:100%;border:0;"  >@Html.Raw(ViewBag.content)</div>
 }
