@@ -15,12 +15,16 @@ namespace nzw.Controllers
         {
             return View();
         }
-        public ActionResult Pub(string url)
+        public ActionResult Pub(string keyword)
         {
-            ViewBag.url = url;
+            if(!string.IsNullOrEmpty(keyword))
+            {
+                string url = "https://search.jd.com/Search?keyword={0}";
+            ViewBag.keyword = keyword;
             WebClient client = new WebClient();
             client.Encoding = Encoding.UTF8;
-            ViewBag.content= client.DownloadString(url);
+            ViewBag.content= client.DownloadString(string.Format(url,keyword));
+            }
             return View();
         }
     }
