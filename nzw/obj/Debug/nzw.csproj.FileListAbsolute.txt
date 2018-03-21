@@ -145,4 +145,10 @@ D:\Git_Asp.net\nzw\nzw\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.dll
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.pdb
 D:\Git_Asp.net\nzw\nzw\obj\Debug\nzw.csproj.CoreCompileInputs.cache
-E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache
+E:\TeamFondationServers\nzw\nzw\bin\zxing.dll
+E:\TeamFondationServers\nzw\nzw\bin\zxing.presentation.dll
+E:\TeamFondationServers\nzw\nzw\bin\zxing.pdb
+E:\TeamFondationServers\nzw\nzw\bin\zxing.xml
+E:\TeamFondationServers\nzw\nzw\bin\zxing.presentation.pdb
+E:\TeamFondationServers\nzw\nzw\bin\zxing.presentation.xml
+E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csproj.CoreCompileInputs.cache
