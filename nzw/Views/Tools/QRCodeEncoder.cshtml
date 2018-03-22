@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+<div>
+    <div style="width:50%;float:left">
+        <textarea id="qrstr" placeholder="请输入文本或网址" style="resize:none;width:100%;max-width:700px;height: 200px;"></textarea>
+    </div>
+    <div style="float:left;height: 200px;margin:1px 26px 10px 116px;background-color:white;width: 200px;">
+        <img  id="qrimg" src="11" alt="二维码生成区域">
+    </div>
+</div>
+
+<div style="clear:both;margin:20px">
+    <label>二维码格式:</label>
+    <select id="barcode">
+        <option value="1">AZTEC</option>
+        <option value="32"> DATA_MATRIX</option>
+        <option value="1024">PDF_417</option>
+        <option value="2048" selected>QR_CODE</option>
+
+    </select>             
+    <label>高度:</label><input id="qrheiht" placeholder="二维码高度" />
+    <label>宽度:</label><input id="qrwidth" placeholder="二维码宽度" />
+    <input type="button" style="background-color:black;border:0;border-radius:5px;color:white;height:30px;width:126px;" value="生成二维码" onclick="CreateQr()" />
+</div>
+<script>
+    function CreateQr() {
+        var srcl = "@Url.Content("~/tools/QRCodeEncoder")";
+        $("#qrimg").attr("src", srcl + "?str=" + encodeURI($("#qrstr").val()) + "&width=" + $("#qrwidth").val() + "&height=" + $("#qrheiht").val() + "&barcode=" + $("#barcode").val());
+    }
+</script>

@@ -10,6 +10,7 @@ using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
 using System.Net.Mime;
+using System.Runtime.Remoting;
 
 namespace nzw.Controllers
 {
@@ -21,35 +22,67 @@ namespace nzw.Controllers
             return View();
         }
 
-        public ActionResult QRCodeEncoder(string str, int width = 226, int height = 226)
+        public ActionResult QRCodeEncoder(string str,int barcode= 2048, int width = 226, int height = 226)
         {
             if (string.IsNullOrEmpty(str))
                 return View();
             str = HttpUtility.UrlDecode(str);
-            QRCodeWriter qRCodeWriter = new QRCodeWriter();
-            BitMatrix bitMatrix = qRCodeWriter.encode(str, ZXing.BarcodeFormat.QR_CODE, width, height);
-            BarcodeWriter barcodeWriter = new BarcodeWriter(); 
-             Bitmap bitmap = barcodeWriter.Write(bitMatrix);
-            Stream stream = new MemoryStream();
+            string typename = ((_BarcodeFormat)barcode).ToString().Replace("_",".");
+            ObjectHandle handle = Activator.CreateInstance("zxing", "ZXing." +typename);
+            dynamic qRCodeWriter = handle.Unwrap();
+            BitMatrix bitMatrix = qRCodeWriter.encode(str, (BarcodeFormat)barcode, width, height);
+            BarcodeWriter barcodeWriter = new BarcodeWriter();
+            Bitmap bitmap = barcodeWriter.Write(bitMatrix);
+            MemoryStream stream = new MemoryStream();
             bitmap.Save(stream, ImageFormat.Jpeg);
             bitmap.Dispose();
-            return File(stream, MimeMapping.GetMimeMapping(".gif"));
+            return File(stream.ToArray(), MimeMapping.GetMimeMapping(".gif"));
         }
 
-        public ActionResult BarCodeEncoder(string str,int width=326,int height=126)
+        
+        public ActionResult QRCodeDncoder()
         {
-            if (string.IsNullOrEmpty(str))
-                return View();
-            str = HttpUtility.UrlDecode(str);
-            BarcodeWriter barCodeWriter = new BarcodeWriter();
-            barCodeWriter.Format = BarcodeFormat.CODABAR;
-            BitMatrix bitMatrix = new BitMatrix(width, height);
-            bitMatrix= barCodeWriter.Encode(str);
-            Bitmap bitmap= barCodeWriter.Write(bitMatrix);
-            Stream stream = new MemoryStream();
-            bitmap.Save(stream, ImageFormat.Jpeg);
-            bitmap.Dispose();
-            return File(stream, MimeMapping.GetMimeMapping(".gif"));
+            return Content("此功能即将上线");
         }
+
+        public ActionResult UrlEncoder(string str)
+        {
+            return Content("此功能即将上线");
+        }
+
+        public ActionResult UrlDncoder(string str)
+        {
+            return Content("此功能即将上线");
+        }
+
+        public ActionResult JsonFormat(string str)
+        {
+            return Content("此功能即将上线");
+        }
+
+        public ActionResult AddWaterMark()
+        {
+            return Content("此功能即将上线");
+        }
+    }
+    public enum _BarcodeFormat
+    {
+        //
+        // 摘要:
+        //     Aztec 2D barcode format.
+        Aztec_AztecWriter = 1,
+
+        //
+        // 摘要:
+        //     Data Matrix 2D barcode format.
+        Datamatrix_DataMatrixWriter = 32,
+        //
+        // 摘要:
+        //     PDF417 format.
+        PDF417_PDF417Writer = 1024,
+        //
+        // 摘要:
+        //     QR Code 2D barcode format.
+        QrCode_QRCodeWriter = 2048,
     }
 }
