@@ -12,6 +12,7 @@
         -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
         box-shadow: 10px 10px 5px #888888;
     }
+
         #tools ul {
             list-style-type: none;
             margin: 0;
@@ -19,16 +20,17 @@
             overflow: hidden;
             width: 100%;
             background-color: #bebebe;
-            
         }
 
         #tools li {
             float: left;
         }
+
             #tools li a {
                 height: 40px;
                 padding-top: 10px;
             }
+
         #tools a:link, a:visited {
             display: block;
             width: 114px;
@@ -41,9 +43,10 @@
             border-right: 1px solid red;
         }
 
-    #tools a:hover, a:active {
-        background-color: #cc0000;
-    }
+        #tools a:hover, a:active {
+            background-color: #cc0000;
+        }
+
     .colorblack {
         color: black
     }
@@ -51,14 +54,14 @@
 <div id="tools">
     <ul>
         <li><a href="javascript: void(0)" onclick="javascript: TabSelected(this, 'QRCodeEncoder')">二维码生成</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'QRCodeDncoder')">二维码解码</a></li>
+        @*<li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'QRCodeDncoder')">二维码解码</a></li>*@
         <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'UrlEncoder')">URL编码</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'UrlDncoder')">URL解码</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'JsonFormat')">JSON格式校验</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'AddWaterMark')">图片/文档加水印</a></li>
+        @*<li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'UrlDncoder')">URL解码</a></li>*@
+        <li><a href="http://www.json.cn" target="_blank">JSON格式校验</a></li>
+        @*<li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'AddWaterMark')">图片/文档加水印</a></li>*@
         <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'IPSource')">IP归属地查询</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'MD5')">MD5加密</a></li>
-        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'LeaveBoard')">留言</a></li>
+        <li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'EnCrypt')">MD5加密</a></li>
+        @*<li><a href="javascript: void(0)" onclick="javascript:TabSelected(this,'LeaveBoard')">留言</a></li>*@
     </ul>
     <div id="QRCodeEncoder" style="display:none">二维码生成页面加载……</div>
     <div id="QRCodeDncoder" style="display:none">二维码解码页面加载……</div>
@@ -67,7 +70,7 @@
     <div id="JsonFormat" style="display:none">JSON格式校验页面加载……</div>
     <div id="AddWaterMark" style="display:none">图片/文档加水印页面加载……</div>
     <div id="IPSource" style="display:none">IP归属地查询页面加载……</div>
-    <div id="MD5" style="display:none">MD5加密页面加载……</div>
+    <div id="EnCrypt" style="display:none">MD5加密页面加载……</div>
     <div id="LeaveBoard" style="display:none">留言页面加载……</div>
     <div style="text-align:center;margin:50px;color: saddlebrown;font-size:30px">
         感谢使用北京中泰祥和可以有限公司提供工具，所有工具面向个人用户永久免费，如有兴趣，本公司可提供源码供彼此交流学习！

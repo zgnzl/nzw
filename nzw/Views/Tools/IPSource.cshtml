@@ -1,0 +1,31 @@
+﻿@{ Layout = null;}
+<div style="clear:both;margin:20px;padding-top:50px;">
+    <label id="zj">@ViewBag.ip</label><br />
+    <label>IP:</label>
+    <input id="ip" type="text" value="" /><br />
+    <label id="city"></label><br />
+    <input type="button" style="background-color:black;border:0;border-radius:5px;color:white;height:30px;width:126px;" value="查  询" onclick="IP()" />
+</div>
+<script>
+    var ip = "@ViewBag.ip";
+    function IP() {
+        var qip = $("#ip").val();
+        var id = "city"
+        var pre = "";
+        if (qip == "") {
+            qip = ip;
+            id = "zj";
+            pre = "您当前";
+        }
+        $.ajax({
+            url: "https://zg69.cn/lc/GetCityByIP",
+                data: { ip: qip },
+                type: 'post',  
+                success: function (data) {
+                    $("#" + id).html(pre+"IP:" + qip + "</BR>" + data);
+                }
+        }
+        );
+    }
+    IP();
+</script>

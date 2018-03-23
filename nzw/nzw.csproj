@@ -700,6 +700,10 @@
     <Content Include="Views\Search\Pub.cshtml" />
     <Content Include="Views\Tools\Index.cshtml" />
     <Content Include="Views\Tools\QRCodeEncoder.cshtml" />
+    <Content Include="Views\Tools\UrlEncoder.cshtml" />
+    <Content Include="Views\Tools\JsonFormat.cshtml" />
+    <Content Include="Views\Tools\EnCrypt.cshtml" />
+    <Content Include="Views\Tools\IPSource.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,45 @@
+﻿@{
+    Layout = null;
+}
+<div>
+    <div style="width:50%;float:left">
+        <textarea id="str" placeholder="请输入文本或网址" style="resize:none;width:100%;max-width:700px;height: 200px;"></textarea>
+    </div>
+    <div style="float:left;height: 200px;margin:1px 26px 10px 116px;background-color:white;width: 37%;">
+        <textarea id="encodestr"  placeholder="请输入文本或网址" style="resize:none;width:100%;max-width:700px;height: 200px;"></textarea>
+    </div>
+</div>
+<div style="clear:both;margin:20px;padding-top:50px;">
+    <label>编码类型:</label>
+    <select id="encodetype">
+        <option value="1" selected>编码</option>
+        <option value="4"> 解码</option>
+    </select>
+    <label>编码方式:</label>
+    <select id="encodeway">
+        <option value="1" selected>escape</option>
+        <option value="4"> encodeURI</option>
+        <option value="8"> encodeURIComponent</option>
+    </select>
+    <input type="button" style="background-color:black;border:0;border-radius:5px;color:white;height:30px;width:126px;" value="生成" onclick="Encoder()" />
+</div>
+<script>
+    function Encoder() {
+        var result; 
+        if ($("#encodetype").val() == '1') {
+            switch ($("#encodeway").val()) {
+                case '1': result = escape($("#str").val()); break;
+                case '4': result = encodeURI($("#str").val()); break;
+                case '8': result = encodeURIComponent($("#str").val()); break;
+            }
+        }
+        else {
+            switch ($("#encodeway").val()) {
+                case '1': result = unescape($("#str").val()); break;
+                case '4': result = decodeURI($("#str").val()); break;
+                case '8': result = decodeURIComponent($("#str").val()); break;
+            }
+        }
+        $("#encodestr").val(result);
+    }
+</script>

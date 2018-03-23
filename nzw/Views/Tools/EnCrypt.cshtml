@@ -1,0 +1,32 @@
+﻿@{ 
+    Layout = null;
+}
+<div>
+    <div style="width:50%;float:left">
+        <textarea id="premd5str" placeholder="请输入待加密文本" style="resize:none;width:100%;max-width:700px;height: 200px;"></textarea>
+    </div>
+    <div style="float:left;height: 200px;margin:1px 26px 10px 116px;background-color:white;width: 37%;">
+        <textarea id="md5str" placeholder="加密后文本" style="resize:none;width:100%;max-width:700px;height: 200px;"></textarea>
+    </div>
+</div>
+<div style="clear:both;margin:20px;padding-top:50px;">
+    <label>大小写:</label>
+    <select id="format">
+        <option value="X" selected>大写</option>
+        <option value="x"> 小写</option>
+    </select>
+    <input type="button" style="background-color:black;border:0;border-radius:5px;color:white;height:30px;width:126px;" value="加 密" onclick="EnCrypt()" />
+</div>
+<script>
+    function EnCrypt(){
+    $.ajax({
+        url:'@Url.Content("~/tools/EnCrypt")',
+        data: { str: $("#premd5str").val(), format: $("#format").val() },
+        type: 'post',
+        success: function (data) {
+            $("#md5str").val(data);
+        }
+
+        });
+    }
+</script>
