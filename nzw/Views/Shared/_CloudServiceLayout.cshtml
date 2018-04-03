@@ -29,9 +29,13 @@
             </div>
             <div class="navbar-collapse collapse" style="float:right">
                 <ul class="nav navbar-nav">
-                    @Html.ActionLink("中泰检索", "pub", "search")
-                    @Html.ActionLink("互联网工具","index", "tools")
-                    <li><a href="http://www.buy.zgztxh.com/" target="ztxh_buy">电子器件商城</a></li>
+                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                    <li>@Html.ActionLink("产品", "Product", "Home", new { id = "" }, null)</li>
+                    <li>@Html.ActionLink("案例", "Anli/", "Home", new { id = "" }, null)</li>
+                    <li>@Html.ActionLink("关于", "About", "Home")</li>
+                    <li>@Html.ActionLink("联系", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("招聘", "ZhaoPin", "Home")</li>
+                    <li><a href="https://www.buy.zgztxh.com/" target="ztxh_buy">电子器件商城</a></li>
                 </ul>
             </div>
         </div>
@@ -51,6 +55,9 @@
 
             .zhuye ul {
                 background-color: #cb3a0e;
+            }
+            footer a {
+                color: #428bca;
             }
         </style>
         <script>
@@ -126,13 +133,9 @@
         <footer style="margin-left: auto;margin-right: auto;margin-left: 5px;text-align: center;">
             <p>
                 @Html.Raw("@")北京市通州区台湖北里29号楼3层328室
-                @Html.ActionLink("主页", "Index", "Home", null, new { @style = "margin-left: 50px" })
-                @Html.ActionLink("产品", "Product", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
-                @Html.ActionLink("案例", "Anli/", "Home", new { id = "" }, new { @style = "margin-left: 20px" })
-                @Html.ActionLink("关于", "About", "Home", null, new { @style = "margin-left: 20px" })
-                @Html.ActionLink("联系", "Contact", "Home", null, new { @style = "margin-left: 20px" })
-                @Html.ActionLink("招聘", "ZhaoPin", "Home", null, new { @style = "margin-left: 20px" })
-                <a href="http://www.buy.zgztxh.com/"  target="ztxh_buy" style="margin-left: 20px">电子器件商城</a>
+                @Html.ActionLink("互联网工具", "index", "tools", new { id = "" }, new { @style = "margin-left: 20px", target = "ztxh_tools" })
+                <a href="https://search.zgztxh.com/" target="ztxh_search" style="margin-left: 20px">中泰检索</a>
+                <a href="https://www.buy.zgztxh.com/" target="ztxh_buy" style="margin-left: 20px">电子器件商城</a>
             </p>
             <p>
                 &copy; @DateTime.Now.Year - 北京中泰祥和科技有限公司 &nbsp; &nbsp;  京ICP备17056601号 &nbsp;&nbsp; 
