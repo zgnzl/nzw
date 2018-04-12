@@ -152,3 +152,4 @@ E:\TeamFondationServers\nzw\nzw\bin\zxing.xml
 E:\TeamFondationServers\nzw\nzw\bin\zxing.presentation.pdb
 E:\TeamFondationServers\nzw\nzw\bin\zxing.presentation.xml
 E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csproj.CoreCompileInputs.cache
+E:\TeamFondationServers\nzw\nzw\obj\Debug\nzw.csprojResolveAssemblyReference.cache
